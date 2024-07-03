@@ -1,0 +1,113 @@
+2024-06-13 14:41:52,969 - root - INFO - start training......
+2024-06-13 14:44:55,136 - root - INFO - start training......
+2024-06-13 14:47:41,413 - root - INFO - start training......
+2024-06-13 15:04:02,817 - root - INFO - start testing......
+2024-06-13 15:04:02,817 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-13 15:04:02,817 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-13 15:04:02,820 - root - INFO - start training......
+2024-06-13 15:21:24,903 - root - INFO - start testing......
+2024-06-13 15:21:24,903 - root - INFO - test score: {'auc': 0.8340593126869037, 'spauc': 0.6978694742268061, 'metric': 0.7466448442603593, 'f1_real': 0.8881023686359923, 'f1_fake': 0.6051873198847262, 'recall': 0.7264709728281262, 'recall_real': 0.9288154897494305, 'recall_fake': 0.5241264559068219, 'precision': 0.7833588229714991, 'precision_real': 0.8508085550339072, 'precision_fake': 0.7159090909090909, 'acc': 0.8256257955027577}.
+2024-06-13 15:21:24,903 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7466448442603593.
+
+
+2024-06-13 15:21:24,907 - root - INFO - start training......
+2024-06-13 15:34:38,941 - root - INFO - start testing......
+2024-06-13 15:34:38,941 - root - INFO - test score: {'auc': 0.8318107823331653, 'spauc': 0.695639246502203, 'metric': 0.7548649757673056, 'f1_real': 0.8745724059293044, 'f1_fake': 0.6351575456053068, 'recall': 0.7554237622186257, 'recall_real': 0.8735763097949886, 'recall_fake': 0.6372712146422629, 'precision': 0.7543143137476886, 'precision_real': 0.8755707762557078, 'precision_fake': 0.6330578512396694, 'acc': 0.8133220195163343}.
+2024-06-13 15:34:38,941 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7548649757673056.
+
+
+2024-06-13 15:34:38,945 - root - INFO - start training......
+2024-06-13 15:50:53,121 - root - INFO - start testing......
+2024-06-13 15:50:53,121 - root - INFO - test score: {'auc': 0.8340555224966741, 'spauc': 0.7000059446141497, 'metric': 0.7511606178543812, 'f1_real': 0.8865072822203902, 'f1_fake': 0.6158139534883721, 'recall': 0.7346568361766077, 'recall_real': 0.9185649202733486, 'recall_fake': 0.5507487520798668, 'precision': 0.7774620129921057, 'precision_real': 0.8566117896972916, 'precision_fake': 0.6983122362869199, 'acc': 0.824777259227832}.
+2024-06-13 15:50:53,121 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7511606178543812.
+
+
+2024-06-13 15:50:53,124 - root - INFO - start training......
+2024-06-15 14:09:04,156 - root - INFO - start training......
+2024-06-15 14:35:01,864 - root - INFO - start testing......
+2024-06-15 14:35:01,864 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-15 14:35:01,865 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-15 14:35:01,869 - root - INFO - start training......
+2024-06-15 14:59:36,477 - root - INFO - start testing......
+2024-06-15 14:59:36,477 - root - INFO - test score: {'auc': 0.8340593126869037, 'spauc': 0.6978694742268061, 'metric': 0.7466448442603593, 'f1_real': 0.8881023686359923, 'f1_fake': 0.6051873198847262, 'recall': 0.7264709728281262, 'recall_real': 0.9288154897494305, 'recall_fake': 0.5241264559068219, 'precision': 0.7833588229714991, 'precision_real': 0.8508085550339072, 'precision_fake': 0.7159090909090909, 'acc': 0.8256257955027577}.
+2024-06-15 14:59:36,477 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7466448442603593.
+
+
+2024-06-15 14:59:36,481 - root - INFO - start training......
+2024-06-15 15:12:50,198 - root - INFO - start testing......
+2024-06-15 15:12:50,198 - root - INFO - test score: {'auc': 0.8318107823331653, 'spauc': 0.695639246502203, 'metric': 0.7548649757673056, 'f1_real': 0.8745724059293044, 'f1_fake': 0.6351575456053068, 'recall': 0.7554237622186257, 'recall_real': 0.8735763097949886, 'recall_fake': 0.6372712146422629, 'precision': 0.7543143137476886, 'precision_real': 0.8755707762557078, 'precision_fake': 0.6330578512396694, 'acc': 0.8133220195163343}.
+2024-06-15 15:12:50,198 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7548649757673056.
+
+
+2024-06-15 15:12:50,202 - root - INFO - start training......
+2024-06-15 16:02:37,585 - root - INFO - start training......
+2024-06-15 16:15:52,474 - root - INFO - start testing......
+2024-06-15 16:15:52,474 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-15 16:15:52,474 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-15 16:15:52,475 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-15 16:15:52,475 - root - INFO - best param lr: 0.0001
+2024-06-15 16:15:52,475 - root - INFO - best metric:{'metric': 0.7526033803096549}
+2024-06-15 16:15:52,475 - root - INFO - --------------------------------------
+
+2024-06-15 17:31:25,195 - root - INFO - start training......
+2024-06-15 17:56:24,728 - root - INFO - start testing......
+2024-06-15 17:56:24,729 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-15 17:56:24,729 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-15 17:56:24,730 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-15 17:56:24,731 - root - INFO - best param lr: 0.0001
+2024-06-15 17:56:24,731 - root - INFO - best metric:{'metric': 0.7526033803096549}
+2024-06-15 17:56:24,731 - root - INFO - --------------------------------------
+
+2024-06-15 18:13:17,742 - root - INFO - start training......
+2024-06-15 18:38:07,661 - root - INFO - start testing......
+2024-06-15 18:38:07,662 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-15 18:38:07,662 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-15 18:38:07,670 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-15 18:38:07,671 - root - INFO - best param lr: 0.0001
+2024-06-15 18:38:07,671 - root - INFO - best metric:{'metric': 0.7526033803096549}
+2024-06-15 18:38:07,671 - root - INFO - --------------------------------------
+
+2024-06-21 16:10:36,096 - root - INFO - start training......
+2024-06-21 16:24:06,837 - root - INFO - start testing......
+2024-06-21 16:24:06,837 - root - INFO - test score: {'auc': 0.8329127801424353, 'spauc': 0.6948303401137177, 'metric': 0.7526033803096549, 'f1_real': 0.8889496717724289, 'f1_fake': 0.6162570888468809, 'recall': 0.7339139588915968, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5424292845257903, 'precision': 0.7843055395600599, 'precision_real': 0.8552631578947368, 'precision_fake': 0.7133479212253829, 'acc': 0.8277471361900721}.
+2024-06-21 16:24:06,837 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7526033803096549.
+
+
+2024-06-21 16:24:06,843 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-21 16:24:06,843 - root - INFO - best param lr: 0.0001
+2024-06-21 16:24:06,843 - root - INFO - best metric:{'metric': 0.7526033803096549}
+2024-06-21 16:24:06,843 - root - INFO - --------------------------------------
+
+2024-06-26 22:31:40,734 - root - INFO - start training......
+2024-06-26 22:38:42,718 - root - INFO - start training......
+2024-06-26 23:15:50,817 - root - INFO - start testing......
+2024-06-26 23:15:50,817 - root - INFO - test score: {'auc': 0.9952080301980564, 'spauc': 0.9802493822026, 'metric': 0.9633822560100423, 'f1_real': 0.9446254071661238, 'f1_fake': 0.9821391048539609, 'recall': 0.9660786806084112, 'recall_real': 0.9526938239159002, 'recall_fake': 0.9794635373009221, 'precision': 0.9607609182110108, 'precision_real': 0.9366925064599483, 'precision_fake': 0.9848293299620733, 'acc': 0.972990149348586}.
+2024-06-26 23:15:50,817 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.9633822560100423.
+
+
+2024-06-26 23:15:50,819 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-26 23:15:50,819 - root - INFO - best param lr: 0.0001
+2024-06-26 23:15:50,819 - root - INFO - best metric:{'metric': 0.9633822560100423}
+2024-06-26 23:15:50,819 - root - INFO - --------------------------------------
+
+2024-06-27 14:56:06,932 - root - INFO - start training......
+2024-06-27 15:35:30,594 - root - INFO - start testing......
+2024-06-27 15:35:30,594 - root - INFO - test score: {'auc': 0.9952080301980564, 'spauc': 0.9802493822026, 'metric': 0.9633822560100423, 'f1_real': 0.9446254071661238, 'f1_fake': 0.9821391048539609, 'recall': 0.9660786806084112, 'recall_real': 0.9526938239159002, 'recall_fake': 0.9794635373009221, 'precision': 0.9607609182110108, 'precision_real': 0.9366925064599483, 'precision_fake': 0.9848293299620733, 'acc': 0.972990149348586, 'accuracy_real': 0.9794635373009221, 'accuracy_fake': 0.9526938239159002}.
+2024-06-27 15:35:30,594 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.9633822560100423.
+
+
+2024-06-27 15:35:30,596 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-06-27 15:35:30,596 - root - INFO - best param lr: 0.0001
+2024-06-27 15:35:30,596 - root - INFO - best metric:{'metric': 0.9633822560100423}
+2024-06-27 15:35:30,596 - root - INFO - --------------------------------------
+

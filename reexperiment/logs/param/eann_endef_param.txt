@@ -1,0 +1,23 @@
+2024-06-20 22:23:26,703 - root - INFO - start training......
+2024-06-21 10:44:44,888 - root - INFO - start training......
+2024-06-21 11:06:09,413 - root - INFO - start testing......
+2024-06-21 11:06:09,413 - root - INFO - test score: {'auc': 0.8624772114812443, 'spauc': 0.7356127869847262, 'metric': 0.7751524757789421, 'f1_real': 0.9009793253536452, 'f1_fake': 0.649325626204239, 'recall': 0.7518922524721515, 'recall_real': 0.9430523917995444, 'recall_fake': 0.5607321131447587, 'precision': 0.81683352402746, 'precision_real': 0.8625, 'precision_fake': 0.7711670480549199, 'acc': 0.845566397963513}.
+2024-06-21 11:06:09,413 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7751524757789421.
+
+
+2024-06-21 11:06:09,417 - root - INFO - best model path:./param_model/eann_endef/parameter_eannendef.pkl
+2024-06-21 11:06:09,417 - root - INFO - best param lr: 0.0001
+2024-06-21 11:06:09,417 - root - INFO - best metric:{'metric': 0.7751524757789421}
+2024-06-21 11:06:09,417 - root - INFO - --------------------------------------
+
+2024-06-28 11:12:43,229 - root - INFO - start training......
+2024-06-28 11:51:57,062 - root - INFO - start testing......
+2024-06-28 11:51:57,062 - root - INFO - test score: {'auc': 0.9978763549527301, 'spauc': 0.9895113430831706, 'metric': 0.9751346304114674, 'f1_real': 0.962176509621765, 'f1_fake': 0.9880927512011698, 'recall': 0.9719462413795763, 'recall_real': 0.9526938239159002, 'recall_fake': 0.9911986588432523, 'precision': 0.9784280566743303, 'precision_real': 0.9718498659517426, 'precision_fake': 0.985006247396918, 'acc': 0.9818875119161106, 'accuracy_real': 0.9911986588432523, 'accuracy_fake': 0.9526938239159002}.
+2024-06-28 11:51:57,062 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.9751346304114674.
+
+
+2024-06-28 11:51:57,063 - root - INFO - best model path:./param_model/eann_endef/parameter_eannendef.pkl
+2024-06-28 11:51:57,063 - root - INFO - best param lr: 0.0001
+2024-06-28 11:51:57,063 - root - INFO - best metric:{'metric': 0.9751346304114674}
+2024-06-28 11:51:57,063 - root - INFO - --------------------------------------
+

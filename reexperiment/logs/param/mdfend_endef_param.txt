@@ -1,0 +1,23 @@
+2024-06-21 14:16:12,198 - root - INFO - start training......
+2024-06-21 14:39:15,930 - root - INFO - start testing......
+2024-06-21 14:39:15,931 - root - INFO - future test score: {'auc': 0.8479427794981029, 'spauc': 0.722879742650073, 'metric': 0.7678844415053749, 'f1_real': 0.8938393839383938, 'f1_fake': 0.6419294990723562, 'recall': 0.7505528939997499, 'recall_real': 0.9253986332574032, 'recall_fake': 0.5757071547420965, 'precision': 0.7948642892189661, 'precision_real': 0.8643617021276596, 'precision_fake': 0.7253668763102725, 'acc': 0.8362324989393296}.
+2024-06-21 14:39:15,931 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.7678844415053749.
+
+
+2024-06-21 14:39:15,932 - root - INFO - best model path:./param_model/mdfend_endef/parameter_mdfendendef.pkl
+2024-06-21 14:39:15,932 - root - INFO - best param lr: 0.0001
+2024-06-21 14:39:15,932 - root - INFO - best metric:{'metric': 0.7678844415053749}
+2024-06-21 14:39:15,932 - root - INFO - --------------------------------------
+
+2024-06-26 18:02:39,516 - root - INFO - start training......
+2024-06-28 14:38:55,303 - root - INFO - start training......
+2024-06-28 16:01:20,429 - root - INFO - start testing......
+2024-06-28 16:01:20,429 - root - INFO - future test score: {'auc': 0.9961448352357654, 'spauc': 0.9817627517690712, 'metric': 0.9694496866335827, 'f1_real': 0.953519256308101, 'f1_fake': 0.9853801169590644, 'recall': 0.9660896953648803, 'recall_real': 0.9434954007884363, 'recall_fake': 0.9886839899413243, 'precision': 0.972928320359432, 'precision_real': 0.963758389261745, 'precision_fake': 0.982098251457119, 'acc': 0.9777565935811884, 'accuracy_real': 0.9886839899413243, 'accuracy_fake': 0.9434954007884363}.
+2024-06-28 16:01:20,429 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.9694496866335827.
+
+
+2024-06-28 16:01:20,433 - root - INFO - best model path:./param_model/mdfend_endef/parameter_mdfendendef.pkl
+2024-06-28 16:01:20,433 - root - INFO - best param lr: 0.0001
+2024-06-28 16:01:20,433 - root - INFO - best metric:{'metric': 0.9694496866335827}
+2024-06-28 16:01:20,433 - root - INFO - --------------------------------------
+
