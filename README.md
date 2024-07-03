@@ -46,7 +46,7 @@
     │   ├── train.json<br>
     │   ├── val.json<br>
     │   ├── test.json<br>
-	├── datanew    (新数据集)<br>
+    ├── datanew    (新数据集)<br>
     │   ├── train.json<br>
     │   ├── val.json<br>
     │   ├── test.json<br>
@@ -56,13 +56,13 @@
     │   ├── bigruendef.py<br>
     │   └── ...<br>
     ├── param_model           (训练结果)<br>
-	│   ├── origin... .json   (消融)<br>
-    │   ├── ... .json         (新数据集)<br>
-	│   └── ...<br>
+    │	│   ├── origin... .json   (消融)<br>
+    │   │   ├── ... .json         (新数据集)<br>
+    │	│   └── ...<br>
     └── utils     (数据加载/实体提取/评价指标等等)<br>                
         ├── dataloader.py<br>
-		├── texsmart.py<br>
-  		├── draw.py<br>
+        ├── texsmart.py<br>
+        ├── draw.py<br>
         └── utils.py<br>
 ```
 # Run
