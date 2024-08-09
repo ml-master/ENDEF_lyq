@@ -1,13 +1,28 @@
 import json
 import random
+from pprint import pprint
 
 import numpy as np
 
 
-def datafipe():
+def split_json_by_truth(json_data):
+    real_data = {}
+    fake_data = {}
+
+    for key,value in json_data.items():
+        if value['label']:
+            real_data[key] = value
+        else:
+            fake_data[key] = value
+
+
+    return real_data,fake_data
+
+
+def datafipe(data):
     # 读取原始数据
-    with open('./data/gossipcop_v3-1_style_based_fake.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    # with open('./data/gossipcop_v3_keep_data_in_proper_length.json', 'r', encoding='utf-8') as f:
+    #    data = json.load(f)
 
     # 获取数据键的列表
     data_keys = list(data.keys())
@@ -17,8 +32,8 @@ def datafipe():
 
     # 计算划分的索引
     total_size = len(data_keys)
-    train_size = int(0.6 * total_size)
-    val_size = int(0.2 * total_size)
+    train_size = 80
+    val_size = 80
     test_size = total_size - train_size - val_size
 
     # 划分数据键
@@ -30,16 +45,17 @@ def datafipe():
     train_data = {key: data[key] for key in train_keys}
     val_data = {key: data[key] for key in val_keys}
     test_data = {key: data[key] for key in test_keys}
+    return train_data, val_data, test_data
 
     # 保存划分后的数据集
-    with open('my-train_data.json', 'w', encoding='utf-8') as f:
-        json.dump(train_data, f, ensure_ascii=False, indent=4)
-
-    with open('./data/my-val_data.json', 'w', encoding='utf-8') as f:
-        json.dump(val_data, f, ensure_ascii=False, indent=4)
-
-    with open('./data/my-test_data.json', 'w', encoding='utf-8') as f:
-        json.dump(test_data, f, ensure_ascii=False, indent=4)
+    # with open('my-train_data.json', 'w', encoding='utf-8') as f:
+    #     json.dump(train_data, f, ensure_ascii=False, indent=4)
+    #
+    # with open('./data/my-val_data.json', 'w', encoding='utf-8') as f:
+    #     json.dump(val_data, f, ensure_ascii=False, indent=4)
+    #
+    # with open('./data/my-test_data.json', 'w', encoding='utf-8') as f:
+    #     json.dump(test_data, f, ensure_ascii=False, indent=4)
 
 
 def opennpy():
@@ -55,4 +71,19 @@ def opennpy():
     print(data)
 
 if __name__ == '__main__':
-    opennpy()
+    with open('./data/raw/gossipcop_v3_keep_data_in_proper_length.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    real_data, fake_data = split_json_by_truth(data)
+
+    train_real,valid_real,test_real = datafipe(real_data)
+    train_fake,valid_fake,test_fake = datafipe(fake_data)
+    train_real.update(train_fake)
+    valid_real.update(valid_fake)
+    test_real.update(test_fake)
+    with open('./data/raw/train_raw.json', 'w', encoding='utf-8') as f:
+        json.dump(train_real, f, ensure_ascii=False, indent=4)
+
+    with open('./data/raw/valid_raw.json', 'w', encoding='utf-8') as f:
+        json.dump(valid_real, f, ensure_ascii=False, indent=4)
+    with open('./data/raw/test_raw.json', 'w', encoding='utf-8') as f:
+        json.dump(test_real, f, ensure_ascii=False, indent=4)

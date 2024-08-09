@@ -10,7 +10,8 @@ from .layers import *
 from sklearn.metrics import *
 from transformers import BertModel, BertConfig
 
-from utils.utils import Recorder,data2gpu, Averager, metrics
+from utils.utils import Recorder, data2gpu, Averager, metrics
+
 
 class BiGRUModel(torch.nn.Module):
     def __init__(self, emb_dim, mlp_dims, dropout, num_layers):
@@ -18,22 +19,22 @@ class BiGRUModel(torch.nn.Module):
         self.fea_size = emb_dim
         # self.bert = BertModel.from_pretrained('bert-base-uncased').requires_grad_(False)
 
-        local_model_path = '/data/lj_data/bert'  # 这里填写您解压模型文件的实际路径
+        local_model_path = './Bert/bert-base-uncased'  # 这里填写您解压模型文件的实际路径
         config = BertConfig.from_pretrained(local_model_path)
         self.bert = BertModel.from_pretrained(local_model_path, config=config).requires_grad_(False)
 
         self.embedding = self.bert.embeddings
-        
-        self.rnn = nn.GRU(input_size = emb_dim,
-                          hidden_size = self.fea_size,
-                          num_layers = num_layers, 
-                          batch_first = True, 
-                          bidirectional = True)
+
+        self.rnn = nn.GRU(input_size=emb_dim,
+                          hidden_size=self.fea_size,
+                          num_layers=num_layers,
+                          batch_first=True,
+                          bidirectional=True)
 
         input_shape = self.fea_size * 2
         self.attention = MaskAttention(input_shape)
         self.mlp = MLP(input_shape, mlp_dims, dropout)
-    
+
     def forward(self, **kwargs):
         inputs = kwargs['content']
         masks = kwargs['content_masks']
@@ -49,28 +50,33 @@ class Trainer():
                  config
                  ):
         self.config = config
-        
+
         self.save_path = os.path.join(self.config['save_param_dir'], self.config['model_name'])
         if os.path.exists(self.save_path):
             self.save_param_dir = self.save_path
         else:
             self.save_param_dir = os.makedirs(self.save_path)
-        
 
-    def train(self, logger = None):
-        if(logger):
+    def train(self, logger=None):
+        if (logger):
             logger.info('start training......')
-        self.model = BiGRUModel(self.config['emb_dim'], self.config['model']['mlp']['dims'], self.config['model']['mlp']['dropout'], num_layers=1)
+        self.model = BiGRUModel(self.config['emb_dim'], self.config['model']['mlp']['dims'],
+                                self.config['model']['mlp']['dropout'], num_layers=1)
         if self.config['use_cuda']:
             self.model = self.model.cuda()
         loss_fn = torch.nn.BCELoss()
-        optimizer = torch.optim.Adam(params=self.model.parameters(), lr=self.config['lr'], weight_decay=self.config['weight_decay'])
+        optimizer = torch.optim.Adam(params=self.model.parameters(), lr=self.config['lr'],
+                                     weight_decay=self.config['weight_decay'])
         recorder = Recorder(self.config['early_stop'])
-        val_loader = get_dataloader(self.config['root_path'] + 'val.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'])
+        val_loader = get_dataloader(self.config['root_path'] + 'val.json', self.config['max_len'],
+                                    self.config['batchsize'], shuffle=False, use_endef=False,
+                                    aug_prob=self.config['aug_prob'])
 
         for epoch in range(self.config['epoch']):
             self.model.train()
-            train_loader = get_dataloader(self.config['root_path'] + 'train.json', self.config['max_len'], self.config['batchsize'], shuffle=True, use_endef=False, aug_prob=self.config['aug_prob'])
+            train_loader = get_dataloader(self.config['root_path'] + 'train.json', self.config['max_len'],
+                                          self.config['batchsize'], shuffle=True, use_endef=False,
+                                          aug_prob=self.config['aug_prob'])
             train_data_iter = tqdm.tqdm(train_loader)
             avg_loss = Averager()
 
@@ -107,27 +113,26 @@ class Trainer():
 
             # --------------------------------------
 
-
-
-
-
-
             mark = recorder.add(results)
             if mark == 'save':
                 torch.save(self.model.state_dict(),
-                    os.path.join(self.save_path, 'parameter_bigru.pkl'))
+                           os.path.join(self.save_path, 'parameter_bigru.pkl'))
             elif mark == 'esc':
                 break
             else:
                 continue
         self.model.load_state_dict(torch.load(os.path.join(self.save_path, 'parameter_bigru.pkl')))
 
-        test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'])
+        test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'],
+                                            self.config['batchsize'], shuffle=False, use_endef=False,
+                                            aug_prob=self.config['aug_prob'])
         future_results = self.test(test_future_loader)
-        if(logger):
+        if (logger):
             logger.info("start testing......")
             logger.info("test score: {}.".format(future_results))
-            logger.info("lr: {}, aug_prob: {}, avg test score: {}.\n\n".format(self.config['lr'], self.config['aug_prob'], future_results['metric']))
+            logger.info(
+                "lr: {}, aug_prob: {}, avg test score: {}.\n\n".format(self.config['lr'], self.config['aug_prob'],
+                                                                       future_results['metric']))
         print('test results:', future_results)
         return future_results, os.path.join(self.save_path, 'parameter_bigru.pkl')
 

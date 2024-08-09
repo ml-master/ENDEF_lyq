@@ -6,7 +6,7 @@ from grid_search import Run  # 假设从grid_search模块导入了Run类或函�
 # 使用argparse定义命令行参数
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_name', default='mdfend_endef')  # 模型名称，默认为'bigru'
-parser.add_argument('--epoch', type=int, default=10)  # 训练轮数，默认为10
+parser.add_argument('--epoch', type=int, default=50)  # 训练轮数，默认为10
 parser.add_argument('--aug_prob', type=float, default=0.1)  # 数据增强的概率，默认为0.1             ********
 parser.add_argument('--max_len', type=int, default=170)  # 序列最大长度，默认为170
 parser.add_argument('--early_stop', type=int, default=5)  # 提前停止的步数，默认为5                 ********

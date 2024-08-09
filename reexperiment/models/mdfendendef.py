@@ -135,7 +135,7 @@ class Trainer():
                 json.dump({'epoch': epoch, 'loss': avg_loss.item()}, f)
                 f.write('\n')
 
-            results = self.test(val_loader)
+            results,_,_,_ = self.test(val_loader)
 
             # 保存验证结果
             with open(os.path.join(self.save_path, origin_prefix + 'validation_results.json'), 'a') as f:
@@ -157,9 +157,10 @@ class Trainer():
         self.model.load_state_dict(torch.load(os.path.join(self.save_path, 'parameter_mdfendendef.pkl')))
 
         test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=True, aug_prob=self.config['aug_prob'])
-        future_results = self.test(test_future_loader)
+        future_results,acc,acc_real,acc_fake = self.test(test_future_loader)
         if(logger):
             logger.info("start testing......")
+            logger.info("acc{:.4}, acc_real{:.4}, acc_fake{:.4}".format(acc, acc_real, acc_fake))
             logger.info("future test score: {}.".format(future_results))
             logger.info("lr: {}, aug_prob: {}, avg test score: {}.\n\n".format(self.config['lr'], self.config['aug_prob'], future_results['metric']))
         print('future results:', future_results)
@@ -179,4 +180,9 @@ class Trainer():
                 label.extend(batch_label.detach().cpu().numpy().tolist())
                 pred.extend(batch_pred.detach().cpu().numpy().tolist())
 
-        return metrics(label, pred)
+        pred_binary = [1 if p >= 0.5 else 0 for p in pred]
+        tn, fp, fn, tp = confusion_matrix(label, pred_binary, labels=[0, 1]).ravel()
+        acc_real = tp * 1.0 / (tp + fn)  # 对于正类（真实）的准确率
+        acc_fake = tn * 1.0/ (tn + fp)  # 对于负类（虚假）的准确率
+        acc = (tn+tp)*1.0 / (tn+fp+fn+tp)
+        return metrics(label, pred), acc ,acc_real, acc_fake

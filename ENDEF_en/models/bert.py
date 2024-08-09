@@ -15,7 +15,7 @@ class BERTFENDModel(torch.nn.Module):
 
 
         # self.bert = BertModel.from_pretrained('bert-base-uncased').requires_grad_(False)
-        local_model_path = '/data/lj_data/bert'  # 这里填写您解压模型文件的实际路径
+        local_model_path = './Bert/bert-base-uncased'  # 这里填写您解压模型文件的实际路径
         config = BertConfig.from_pretrained(local_model_path)
         self.bert = BertModel.from_pretrained(local_model_path, config=config).requires_grad_(False)
 

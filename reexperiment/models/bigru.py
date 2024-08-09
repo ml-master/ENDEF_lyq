@@ -20,7 +20,7 @@ class BiGRUModel(torch.nn.Module):
 
         # self.bert = BertModel.from_pretrained('bert-base-uncased').requires_grad_(False)
 
-        local_model_path = '/data/lj_data/bert'  # 这里填写您解压模型文件的实际路径
+        local_model_path = 'bert-base-uncased'  # 这里填写您解压模型文件的实际路径
         config = BertConfig.from_pretrained(local_model_path)
         self.bert = BertModel.from_pretrained(local_model_path, config=config).requires_grad_(False)
 
@@ -100,7 +100,7 @@ class Trainer():
                 json.dump({'epoch': epoch, 'loss': avg_loss.item()}, f)
                 f.write('\n')
 
-            results = self.test(val_loader)
+            results,_,_,_ = self.test(val_loader)
 
             # 保存验证结果
             with open(os.path.join(self.save_path, origin_prefix + 'validation_results.json'), 'a') as f:
@@ -120,10 +120,12 @@ class Trainer():
         self.model.load_state_dict(torch.load(os.path.join(self.save_path, 'parameter_bigru.pkl')))
 
         test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'])
-        future_results = self.test(test_future_loader)
+        future_results, acc ,acc_real, acc_fake = self.test(test_future_loader)
+        print(future_results)
         if(logger):
             logger.info("start testing......")
             logger.info("test score: {}.".format(future_results))
+            logger.info("acc {:.4f} acc_real {:.4f} acc_fake {:.4f}".format(acc, acc_real, acc_fake))
             logger.info("lr: {}, aug_prob: {}, avg test score: {}.\n\n".format(self.config['lr'], self.config['aug_prob'], future_results['metric']))
         print('test results:', future_results)
         return future_results, os.path.join(self.save_path, 'parameter_bigru.pkl')
@@ -142,7 +144,15 @@ class Trainer():
                 label.extend(batch_label.detach().cpu().numpy().tolist())
                 pred.extend(batch_pred.detach().cpu().numpy().tolist())
 
-        return metrics(label, pred)
+
+        pred_binary = [1 if p >= 0.5 else 0 for p in pred]
+        tn, fp, fn, tp = confusion_matrix(label, pred_binary, labels=[0, 1]).ravel()
+
+        # 计算 acc_real 和 acc_fake
+        acc = accuracy_score(label, pred_binary)
+        acc_real = tp / (tp + fn)  # 对于正类（真实）的准确率
+        acc_fake = tn / (tn + fp)  # 对于负类（虚假）的准确率
+        return metrics(label, pred) , acc ,acc_real, acc_fake
 
 
 

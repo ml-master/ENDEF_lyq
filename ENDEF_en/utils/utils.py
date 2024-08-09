@@ -1,7 +1,9 @@
+
 from sklearn.metrics import recall_score, precision_score, f1_score, accuracy_score, roc_auc_score
 import numpy as np
 
-class Recorder():
+
+class Recorder:
 
     def __init__(self, early_step):
         self.max = {'metric': 0}
@@ -31,6 +33,7 @@ class Recorder():
     def showfinal(self):
         print("Max", self.max)
 
+
 def metrics(y_true, y_pred):
     all_metrics = {}
 
@@ -44,8 +47,9 @@ def metrics(y_true, y_pred):
     all_metrics['precision'] = precision_score(y_true, y_pred, average='macro')
     all_metrics['precision_real'], all_metrics['precision_fake'] = precision_score(y_true, y_pred, average=None)
     all_metrics['acc'] = accuracy_score(y_true, y_pred)
-    
+
     return all_metrics
+
 
 def data2gpu(batch, use_cuda):
     if use_cuda:
@@ -57,7 +61,7 @@ def data2gpu(batch, use_cuda):
             'label': batch[4].cuda(),
             'year': batch[5].cuda(),
             'emotion': batch[6].cuda()
-            }
+        }
     else:
         batch_data = {
             'content': batch[0],
@@ -67,8 +71,9 @@ def data2gpu(batch, use_cuda):
             'label': batch[4],
             'year': batch[5],
             'emotion': batch[6]
-            }
+        }
     return batch_data
+
 
 class Averager():
 

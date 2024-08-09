@@ -34,9 +34,10 @@ category_dict = {
     "2018": 2
 }
 
+
 def word2input(texts, max_len):
     # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    tokenizer_path = '/data/lj_data/bert'  # 这里填写您解压模型文件的实际路径
+    tokenizer_path = './Bert/bert-base-uncased'  # 这里填写您解压模型文件的实际路径
     tokenizer = BertTokenizer.from_pretrained(tokenizer_path)
     token_ids = []
     for i, text in enumerate(texts):
@@ -50,12 +51,13 @@ def word2input(texts, max_len):
         masks[i] = (tokens != mask_token_id)
     return token_ids, masks
 
+
 def data_augment(content, entity_list, aug_prob):
     entity_content = []
-    random_num = random.randint(1,100)
+    random_num = random.randint(1, 100)
     if random_num <= 50:
         for item in entity_list:
-            random_num = random.randint(1,100)
+            random_num = random.randint(1, 100)
             if random_num <= int(aug_prob * 100):
                 content = content.replace(item["entity"], '[MASK]')
             elif random_num <= int(2 * aug_prob * 100):
@@ -66,7 +68,7 @@ def data_augment(content, entity_list, aug_prob):
     else:
         content = list(nltk.word_tokenize(content))
         for index in range(len(content) - 1, -1, -1):
-            random_num = random.randint(1,100)
+            random_num = random.randint(1, 100)
             if random_num <= int(aug_prob * 100):
                 del content[index]
             elif random_num <= int(2 * aug_prob * 100):
@@ -76,6 +78,7 @@ def data_augment(content, entity_list, aug_prob):
 
     return content, entity_content
 
+
 def get_entity(entity_list):
     entity_content = []
     for item in entity_list:
@@ -83,9 +86,10 @@ def get_entity(entity_list):
     entity_content = ' [SEP] '.join(entity_content)
     return entity_content
 
+
 def get_dataloader(path, max_len, batch_size, shuffle, use_endef, aug_prob):
-    data_list = json.load(open(path, 'r',encoding='utf-8'))
-    df_data = pd.DataFrame(columns=('content','label'))
+    data_list = json.load(open(path, 'r', encoding='utf-8'))
+    df_data = pd.DataFrame(columns=('content', 'label'))
     for item in data_list:
         tmp_data = {}
         if shuffle == True and use_endef == True:
@@ -98,7 +102,7 @@ def get_dataloader(path, max_len, batch_size, shuffle, use_endef, aug_prob):
 
         # df_data = df_data.append(tmp_data, ignore_index=True)
         df_data = pd.concat([df_data, pd.DataFrame([tmp_data])], ignore_index=True)
-    emotion = np.load(path.replace('.json', '_emo.npy')).astype('float32')
+    emotion = np.load(path.replace('.json', '_emo.npy'), allow_pickle=True).astype('float32')
     emotion = torch.tensor(emotion)
     content = df_data['content'].to_numpy()
     entity_content = df_data['entity'].to_numpy()

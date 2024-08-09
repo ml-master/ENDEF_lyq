@@ -16,14 +16,12 @@ parser.add_argument('--gpu', default='0')
 parser.add_argument('--emb_dim', type=int, default=768)
 parser.add_argument('--lr', type=float, default=0.0001)
 parser.add_argument('--emb_type', default='bert')
-parser.add_argument('--save_log_dir', default= './logs')
-parser.add_argument('--save_param_dir', default= './param_model')
-parser.add_argument('--param_log_dir', default = './logs/param')
-
+parser.add_argument('--save_log_dir', default='./logs')
+parser.add_argument('--save_param_dir', default='./param_model')
+parser.add_argument('--param_log_dir', default='./logs/param')
 
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
-
 
 import torch
 import numpy as np
@@ -37,33 +35,34 @@ torch.cuda.manual_seed(seed)
 torch.backends.cudnn.benchmark = False
 torch.backends.cudnn.deterministic = True
 
-
-print('lr: {}; model name: {}; batchsize: {}; epoch: {}; gpu: {}'.format(args.lr, args.model_name, args.batchsize, args.epoch, args.gpu))
-
+print('lr: {}; model name: {}; batchsize: {}; epoch: {}; gpu: {}'.format(args.lr, args.model_name, args.batchsize,
+                                                                         args.epoch, args.gpu))
 
 config = {
-        'use_cuda': True,
-        'batchsize': args.batchsize,
-        'max_len': args.max_len,
-        'early_stop': args.early_stop,
-        'root_path': args.root_path,
-        'aug_prob': args.aug_prob,
-        'weight_decay': 5e-5,
-        'model':
-            {
+    'use_cuda': True,
+    'batchsize': args.batchsize,
+    'max_len': args.max_len,
+    'early_stop': args.early_stop,
+    'root_path': args.root_path,
+    'aug_prob': args.aug_prob,
+    'weight_decay': 5e-5,
+    'model':
+        {
             'mlp': {'dims': [384], 'dropout': 0.2}
-            },
-        'emb_dim': args.emb_dim,
-        'lr': args.lr,
-        'epoch': args.epoch,
-        'model_name': args.model_name,
-        'seed': args.seed,
-        'save_log_dir': args.save_log_dir,
-        'save_param_dir': args.save_param_dir,
-        'param_log_dir': args.param_log_dir
-        }
+        },
+    'emb_dim': args.emb_dim,
+    'lr': args.lr,
+    'epoch': args.epoch,
+    'model_name': args.model_name,
+    'seed': args.seed,
+    'save_log_dir': args.save_log_dir,
+    'save_param_dir': args.save_param_dir,
+    'param_log_dir': args.param_log_dir
+}
 
 if __name__ == '__main__':
-    print(os.getcwd()+"/data")
-    Run(config = config
+    print(os.getcwd() + "/data")
+    print("当前CUDA版本:", torch.version.cuda)
+
+    Run(config=config
         ).main()
