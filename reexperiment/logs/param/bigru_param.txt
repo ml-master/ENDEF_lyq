@@ -282,3 +282,709 @@
 2024-08-08 15:38:35,962 - root - INFO - best metric:{'metric': 0.6879136273367593}
 2024-08-08 15:38:35,962 - root - INFO - --------------------------------------
 
+2024-08-13 18:25:43,366 - root - INFO - start training......
+2024-08-13 18:26:34,539 - root - INFO - start training......
+2024-08-13 18:27:42,150 - root - INFO - start testing......
+2024-08-13 18:27:42,150 - root - INFO - test score: {'auc': 0.6564243183924531, 'spauc': 0.5428706815320247, 'metric': 0.6136145719036485, 'f1_real': 0.6338455106093865, 'f1_fake': 0.5933836331979107, 'recall': 0.6156814758671598, 'recall_real': 0.6779964221824687, 'recall_fake': 0.5533665295518511, 'precision': 0.6173664341475922, 'precision_real': 0.5950932286555447, 'precision_fake': 0.6396396396396397, 'acc': 0.6146738532614674, 'accuracy_real': 0.5533665295518511, 'accuracy_fake': 0.6779964221824687}.
+2024-08-13 18:27:42,151 - root - INFO - acc 0.6147 acc_real 0.5534 acc_fake 0.6780
+2024-08-13 18:27:42,151 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6136145719036485.
+
+
+2024-08-13 18:27:42,152 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:27:42,152 - root - INFO - best param lr: 0.0001
+2024-08-13 18:27:42,152 - root - INFO - best metric:{'metric': 0.6136145719036485}
+2024-08-13 18:27:42,152 - root - INFO - --------------------------------------
+
+2024-08-13 18:28:46,615 - root - INFO - start training......
+2024-08-13 18:29:48,552 - root - INFO - start testing......
+2024-08-13 18:29:48,552 - root - INFO - test score: {'auc': 0.6535094989545012, 'spauc': 0.5375695505269138, 'metric': 0.6142574065903972, 'f1_real': 0.6384432253389918, 'f1_fake': 0.5900715878418027, 'recall': 0.6169489907324535, 'recall_real': 0.6896243291592129, 'recall_fake': 0.5442736523056939, 'precision': 0.6193095752468529, 'precision_real': 0.5943341684332242, 'precision_fake': 0.6442849820604818, 'acc': 0.6157738422615774, 'accuracy_real': 0.5442736523056939, 'accuracy_fake': 0.6896243291592129}.
+2024-08-13 18:29:48,552 - root - INFO - acc 0.6158 acc_real 0.5443 acc_fake 0.6896
+2024-08-13 18:29:48,552 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6142574065903972.
+
+
+2024-08-13 18:29:48,553 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:29:48,553 - root - INFO - best param lr: 0.0001
+2024-08-13 18:29:48,553 - root - INFO - best metric:{'metric': 0.6142574065903972}
+2024-08-13 18:29:48,553 - root - INFO - --------------------------------------
+
+2024-08-13 18:30:51,282 - root - INFO - start training......
+2024-08-13 18:31:58,909 - root - INFO - start testing......
+2024-08-13 18:31:58,909 - root - INFO - test score: {'auc': 0.6534109327538389, 'spauc': 0.5363454991672272, 'metric': 0.6111780905558104, 'f1_real': 0.6480458153320607, 'f1_fake': 0.5743103657795602, 'recall': 0.616368219894416, 'recall_real': 0.7211538461538461, 'recall_fake': 0.5115825936349859, 'precision': 0.621483457585282, 'precision_real': 0.5883962780514504, 'precision_fake': 0.6545706371191136, 'acc': 0.6146738532614674, 'accuracy_real': 0.5115825936349859, 'accuracy_fake': 0.7211538461538461}.
+2024-08-13 18:31:58,909 - root - INFO - acc 0.6147 acc_real 0.5116 acc_fake 0.7212
+2024-08-13 18:31:58,910 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6111780905558104.
+
+
+2024-08-13 18:31:58,910 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:31:58,910 - root - INFO - best param lr: 0.0001
+2024-08-13 18:31:58,910 - root - INFO - best metric:{'metric': 0.6111780905558104}
+2024-08-13 18:31:58,911 - root - INFO - --------------------------------------
+
+2024-08-13 18:32:42,264 - root - INFO - start training......
+2024-08-13 18:33:31,696 - root - INFO - start testing......
+2024-08-13 18:33:31,697 - root - INFO - test score: {'auc': 0.6374433776874782, 'spauc': 0.5176243929199564, 'metric': 0.6128558505226884, 'f1_real': 0.655909720847357, 'f1_fake': 0.5698019801980198, 'recall': 0.6196040572481789, 'recall_real': 0.7408318425760286, 'recall_fake': 0.4983762719203291, 'precision': 0.626790196572516, 'precision_real': 0.5884547069271758, 'precision_fake': 0.6651256862178561, 'acc': 0.6176438235617644, 'accuracy_real': 0.4983762719203291, 'accuracy_fake': 0.7408318425760286}.
+2024-08-13 18:33:31,697 - root - INFO - acc 0.6176 acc_real 0.4984 acc_fake 0.7408
+2024-08-13 18:33:31,697 - root - INFO - lr: 0.0005, aug_prob: 0.1, avg test score: 0.6128558505226884.
+
+
+2024-08-13 18:33:31,697 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:33:31,698 - root - INFO - best param lr: 0.0005
+2024-08-13 18:33:31,698 - root - INFO - best metric:{'metric': 0.6128558505226884}
+2024-08-13 18:33:31,698 - root - INFO - --------------------------------------
+
+2024-08-13 18:35:42,081 - root - INFO - start training......
+2024-08-13 18:36:42,343 - root - INFO - start testing......
+2024-08-13 18:36:42,343 - root - INFO - test score: {'auc': 0.6534109327538389, 'spauc': 0.5363454991672272, 'metric': 0.6111780905558104, 'f1_real': 0.6480458153320607, 'f1_fake': 0.5743103657795602, 'recall': 0.616368219894416, 'recall_real': 0.7211538461538461, 'recall_fake': 0.5115825936349859, 'precision': 0.621483457585282, 'precision_real': 0.5883962780514504, 'precision_fake': 0.6545706371191136, 'acc': 0.6146738532614674, 'accuracy_real': 0.5115825936349859, 'accuracy_fake': 0.7211538461538461}.
+2024-08-13 18:36:42,343 - root - INFO - acc 0.6147 acc_real 0.5116 acc_fake 0.7212
+2024-08-13 18:36:42,344 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6111780905558104.
+
+
+2024-08-13 18:36:42,346 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:36:42,346 - root - INFO - best param lr: 0.0001
+2024-08-13 18:36:42,347 - root - INFO - best metric:{'metric': 0.6111780905558104}
+2024-08-13 18:36:42,347 - root - INFO - --------------------------------------
+
+2024-08-13 18:38:04,572 - root - INFO - start training......
+2024-08-13 18:38:55,174 - root - INFO - start testing......
+2024-08-13 18:38:55,174 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:38:55,174 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:38:55,174 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:38:55,175 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:38:55,175 - root - INFO - best param lr: 0.0001
+2024-08-13 18:38:55,175 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:38:55,175 - root - INFO - --------------------------------------
+
+2024-08-13 18:39:27,017 - root - INFO - start training......
+2024-08-13 18:40:08,202 - root - INFO - start testing......
+2024-08-13 18:40:08,203 - root - INFO - test score: {'auc': 0.6572894352911924, 'spauc': 0.515046699750638, 'metric': 0.5911381889318825, 'f1_real': 0.6385411532774765, 'f1_fake': 0.5437352245862884, 'recall': 0.5986652751856008, 'recall_real': 0.7242844364937389, 'recall_fake': 0.47304611387746265, 'precision': 0.6051064206593044, 'precision_real': 0.5709501145778247, 'precision_fake': 0.6392627267407841, 'acc': 0.5966340336596634, 'accuracy_real': 0.47304611387746265, 'accuracy_fake': 0.7242844364937389}.
+2024-08-13 18:40:08,203 - root - INFO - acc 0.5966 acc_real 0.4730 acc_fake 0.7243
+2024-08-13 18:40:08,203 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5911381889318825.
+
+
+2024-08-13 18:40:08,203 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:40:08,204 - root - INFO - best param lr: 0.0001
+2024-08-13 18:40:08,204 - root - INFO - best metric:{'metric': 0.5911381889318825}
+2024-08-13 18:40:08,204 - root - INFO - --------------------------------------
+
+2024-08-13 18:40:44,143 - root - INFO - start training......
+2024-08-13 18:41:34,918 - root - INFO - start testing......
+2024-08-13 18:41:34,918 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:41:34,918 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:41:34,919 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:41:34,919 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:41:34,919 - root - INFO - best param lr: 0.0001
+2024-08-13 18:41:34,919 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:41:34,920 - root - INFO - --------------------------------------
+
+2024-08-13 18:42:12,316 - root - INFO - start training......
+2024-08-13 18:42:53,503 - root - INFO - start testing......
+2024-08-13 18:42:53,503 - root - INFO - test score: {'auc': 0.6654628051049932, 'spauc': 0.5218500709735758, 'metric': 0.6251720828619836, 'f1_real': 0.58328173374613, 'f1_fake': 0.667062431977837, 'recall': 0.6282108327159229, 'recall_real': 0.5266100178890877, 'recall_fake': 0.7298116475427582, 'precision': 0.633935626409479, 'precision_real': 0.6536219816819318, 'precision_fake': 0.6142492711370262, 'acc': 0.6298537014629854, 'accuracy_real': 0.7298116475427582, 'accuracy_fake': 0.5266100178890877}.
+2024-08-13 18:42:53,503 - root - INFO - acc 0.6299 acc_real 0.7298 acc_fake 0.5266
+2024-08-13 18:42:53,503 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6251720828619836.
+
+
+2024-08-13 18:42:53,504 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:42:53,504 - root - INFO - best param lr: 0.0001
+2024-08-13 18:42:53,504 - root - INFO - best metric:{'metric': 0.6251720828619836}
+2024-08-13 18:42:53,504 - root - INFO - --------------------------------------
+
+2024-08-13 18:43:35,840 - root - INFO - start training......
+2024-08-13 18:44:22,802 - root - INFO - start testing......
+2024-08-13 18:44:22,802 - root - INFO - test score: {'auc': 0.6573815869429411, 'spauc': 0.5369388736065357, 'metric': 0.6157302844695846, 'f1_real': 0.6515746050910555, 'f1_fake': 0.5798859638481136, 'recall': 0.6207444188099167, 'recall_real': 0.7240608228980322, 'recall_fake': 0.5174280147218012, 'precision': 0.625886616104413, 'precision_real': 0.5922809584781416, 'precision_fake': 0.6594922737306843, 'acc': 0.6190738092619074, 'accuracy_real': 0.5174280147218012, 'accuracy_fake': 0.7240608228980322}.
+2024-08-13 18:44:22,803 - root - INFO - acc 0.6191 acc_real 0.5174 acc_fake 0.7241
+2024-08-13 18:44:22,803 - root - INFO - lr: 0.0002, aug_prob: 0.1, avg test score: 0.6157302844695846.
+
+
+2024-08-13 18:44:22,803 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:44:22,803 - root - INFO - best param lr: 0.0002
+2024-08-13 18:44:22,803 - root - INFO - best metric:{'metric': 0.6157302844695846}
+2024-08-13 18:44:22,804 - root - INFO - --------------------------------------
+
+2024-08-13 18:44:43,178 - root - INFO - start training......
+2024-08-13 18:45:28,750 - root - INFO - start testing......
+2024-08-13 18:45:28,750 - root - INFO - test score: {'auc': 0.6589572422145288, 'spauc': 0.5527009554469969, 'metric': 0.6101342193467478, 'f1_real': 0.6618104118104118, 'f1_fake': 0.558458026883084, 'recall': 0.6192890423819171, 'recall_real': 0.7618515205724508, 'recall_fake': 0.47672656419138343, 'precision': 0.6295029938495847, 'precision_real': 0.5849931318681318, 'precision_fake': 0.6740128558310376, 'acc': 0.6169838301616983, 'accuracy_real': 0.47672656419138343, 'accuracy_fake': 0.7618515205724508}.
+2024-08-13 18:45:28,750 - root - INFO - acc 0.6170 acc_real 0.4767 acc_fake 0.7619
+2024-08-13 18:45:28,750 - root - INFO - lr: 0.0005, aug_prob: 0.1, avg test score: 0.6101342193467478.
+
+
+2024-08-13 18:45:28,751 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:45:28,751 - root - INFO - best param lr: 0.0005
+2024-08-13 18:45:28,751 - root - INFO - best metric:{'metric': 0.6101342193467478}
+2024-08-13 18:45:28,751 - root - INFO - --------------------------------------
+
+2024-08-13 18:46:02,358 - root - INFO - start training......
+2024-08-13 18:46:53,348 - root - INFO - start testing......
+2024-08-13 18:46:53,348 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:46:53,348 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:46:53,349 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:46:53,349 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:46:53,349 - root - INFO - best param lr: 0.0001
+2024-08-13 18:46:53,349 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:46:53,350 - root - INFO - --------------------------------------
+
+2024-08-13 18:47:45,132 - root - INFO - start training......
+2024-08-13 18:48:36,025 - root - INFO - start testing......
+2024-08-13 18:48:36,026 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:48:36,026 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:48:36,026 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:48:36,026 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:48:36,026 - root - INFO - best param lr: 0.0001
+2024-08-13 18:48:36,027 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:48:36,027 - root - INFO - --------------------------------------
+
+2024-08-13 18:49:06,848 - root - INFO - start training......
+2024-08-13 18:49:58,178 - root - INFO - start testing......
+2024-08-13 18:49:58,178 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:49:58,179 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:49:58,179 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:49:58,179 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:49:58,179 - root - INFO - best param lr: 0.0001
+2024-08-13 18:49:58,180 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:49:58,180 - root - INFO - --------------------------------------
+
+2024-08-13 18:50:29,916 - root - INFO - start training......
+2024-08-13 18:51:30,134 - root - INFO - start testing......
+2024-08-13 18:51:30,134 - root - INFO - test score: {'auc': 0.6534109327538389, 'spauc': 0.5363454991672272, 'metric': 0.6111780905558104, 'f1_real': 0.6480458153320607, 'f1_fake': 0.5743103657795602, 'recall': 0.616368219894416, 'recall_real': 0.7211538461538461, 'recall_fake': 0.5115825936349859, 'precision': 0.621483457585282, 'precision_real': 0.5883962780514504, 'precision_fake': 0.6545706371191136, 'acc': 0.6146738532614674, 'accuracy_real': 0.5115825936349859, 'accuracy_fake': 0.7211538461538461}.
+2024-08-13 18:51:30,134 - root - INFO - acc 0.6147 acc_real 0.5116 acc_fake 0.7212
+2024-08-13 18:51:30,134 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6111780905558104.
+
+
+2024-08-13 18:51:30,135 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:51:30,135 - root - INFO - best param lr: 0.0001
+2024-08-13 18:51:30,135 - root - INFO - best metric:{'metric': 0.6111780905558104}
+2024-08-13 18:51:30,135 - root - INFO - --------------------------------------
+
+2024-08-13 18:52:57,005 - root - INFO - start training......
+2024-08-13 18:53:47,762 - root - INFO - start testing......
+2024-08-13 18:53:47,762 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:53:47,762 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:53:47,762 - root - INFO - lr: 0.0001, aug_prob: 0.2, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:53:47,763 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:53:47,763 - root - INFO - best param lr: 0.0001
+2024-08-13 18:53:47,763 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:53:47,763 - root - INFO - --------------------------------------
+
+2024-08-13 18:54:13,631 - root - INFO - start training......
+2024-08-13 18:55:04,264 - root - INFO - start testing......
+2024-08-13 18:55:04,265 - root - INFO - test score: {'auc': 0.6491306616019002, 'spauc': 0.5272156150061073, 'metric': 0.620250331826083, 'f1_real': 0.633659158521037, 'f1_fake': 0.6068415051311289, 'recall': 0.6214572325321909, 'recall_real': 0.6668157423971377, 'recall_fake': 0.576098722667244, 'precision': 0.6223470370048874, 'precision_real': 0.6036437246963563, 'precision_fake': 0.6410503493134184, 'acc': 0.6207237927620723, 'accuracy_real': 0.576098722667244, 'accuracy_fake': 0.6668157423971377}.
+2024-08-13 18:55:04,265 - root - INFO - acc 0.6207 acc_real 0.5761 acc_fake 0.6668
+2024-08-13 18:55:04,265 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.620250331826083.
+
+
+2024-08-13 18:55:04,265 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 18:55:04,266 - root - INFO - best param lr: 0.0001
+2024-08-13 18:55:04,266 - root - INFO - best metric:{'metric': 0.620250331826083}
+2024-08-13 18:55:04,266 - root - INFO - --------------------------------------
+
+2024-08-13 20:04:44,469 - root - INFO - start training......
+2024-08-13 20:06:31,964 - root - INFO - start testing......
+2024-08-13 20:06:31,964 - root - INFO - test score: {'auc': 0.482289204177781, 'spauc': 0.5018519520695667, 'metric': 0.43159163106583415, 'f1_real': 0.0, 'f1_fake': 0.8631832621316683, 'recall': 0.5, 'recall_real': 0.0, 'recall_fake': 1.0, 'precision': 0.37964925804586624, 'precision_real': 0.0, 'precision_fake': 0.7592985160917325, 'acc': 0.7592985160917325, 'accuracy_real': 1.0, 'accuracy_fake': 0.0}.
+2024-08-13 20:06:31,964 - root - INFO - acc 0.7593 acc_real 1.0000 acc_fake 0.0000
+2024-08-13 20:06:31,964 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.43159163106583415.
+
+
+2024-08-13 20:06:31,965 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 20:06:31,965 - root - INFO - best param lr: 0.0001
+2024-08-13 20:06:31,965 - root - INFO - best metric:{'metric': 0.43159163106583415}
+2024-08-13 20:06:31,965 - root - INFO - --------------------------------------
+
+2024-08-13 20:06:52,659 - root - INFO - start training......
+2024-08-13 20:08:40,089 - root - INFO - start testing......
+2024-08-13 20:08:40,090 - root - INFO - test score: {'auc': 0.482289204177781, 'spauc': 0.5018519520695667, 'metric': 0.43159163106583415, 'f1_real': 0.0, 'f1_fake': 0.8631832621316683, 'recall': 0.5, 'recall_real': 0.0, 'recall_fake': 1.0, 'precision': 0.37964925804586624, 'precision_real': 0.0, 'precision_fake': 0.7592985160917325, 'acc': 0.7592985160917325, 'accuracy_real': 1.0, 'accuracy_fake': 0.0}.
+2024-08-13 20:08:40,090 - root - INFO - acc 0.7593 acc_real 1.0000 acc_fake 0.0000
+2024-08-13 20:08:40,090 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.43159163106583415.
+
+
+2024-08-13 20:08:40,090 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 20:08:40,090 - root - INFO - best param lr: 0.0001
+2024-08-13 20:08:40,091 - root - INFO - best metric:{'metric': 0.43159163106583415}
+2024-08-13 20:08:40,091 - root - INFO - --------------------------------------
+
+2024-08-13 21:05:01,974 - root - INFO - start training......
+2024-08-13 21:07:01,223 - root - INFO - start testing......
+2024-08-13 21:07:01,223 - root - INFO - test score: {'auc': 0.6752086666932698, 'spauc': 0.5367064756594654, 'metric': 0.5254617632652928, 'f1_real': 0.42385199867855955, 'f1_fake': 0.627071527852026, 'recall': 0.6029041961714214, 'recall_real': 0.7080573951434879, 'recall_fake': 0.497750997199355, 'precision': 0.5748138767365109, 'precision_real': 0.30245167373880244, 'precision_fake': 0.8471760797342193, 'acc': 0.547218796650873, 'accuracy_real': 0.497750997199355, 'accuracy_fake': 0.7080573951434879}.
+2024-08-13 21:07:01,223 - root - INFO - acc 0.5472 acc_real 0.4978 acc_fake 0.7081
+2024-08-13 21:07:01,223 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5254617632652928.
+
+
+2024-08-13 21:07:01,224 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 21:07:01,224 - root - INFO - best param lr: 0.0001
+2024-08-13 21:07:01,224 - root - INFO - best metric:{'metric': 0.5254617632652928}
+2024-08-13 21:07:01,224 - root - INFO - --------------------------------------
+
+2024-08-13 21:07:24,396 - root - INFO - start training......
+2024-08-13 21:09:34,783 - root - INFO - start testing......
+2024-08-13 21:09:34,783 - root - INFO - test score: {'auc': 0.7002749686709573, 'spauc': 0.5440471732541642, 'metric': 0.564533405927583, 'f1_real': 0.44802835622507753, 'f1_fake': 0.6810384556300886, 'recall': 0.6309720724229673, 'recall_real': 0.6975717439293598, 'recall_fake': 0.5643724009165747, 'precision': 0.5942453238852021, 'precision_real': 0.32998303093590914, 'precision_fake': 0.8585076168344952, 'acc': 0.5957032517686766, 'accuracy_real': 0.5643724009165747, 'accuracy_fake': 0.6975717439293598}.
+2024-08-13 21:09:34,783 - root - INFO - acc 0.5957 acc_real 0.5644 acc_fake 0.6976
+2024-08-13 21:09:34,784 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.564533405927583.
+
+
+2024-08-13 21:09:34,784 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-13 21:09:34,784 - root - INFO - best param lr: 0.0001
+2024-08-13 21:09:34,784 - root - INFO - best metric:{'metric': 0.564533405927583}
+2024-08-13 21:09:34,785 - root - INFO - --------------------------------------
+
+2024-08-14 17:21:00,479 - root - INFO - start training......
+2024-08-14 17:21:54,434 - root - INFO - start testing......
+2024-08-14 17:21:54,435 - root - INFO - test score: {'auc': 0.5152595049860725, 'spauc': 0.4975215438349778, 'metric': 0.380580204839649, 'f1_real': 0.1411900635470826, 'f1_fake': 0.6199703461322154, 'recall': 0.5202506704908749, 'recall_real': 0.07827312323853446, 'recall_fake': 0.9622282177432153, 'precision': 0.5884894974627849, 'precision_real': 0.7196702002355713, 'precision_fake': 0.45730879468999847, 'acc': 0.4730984617565748, 'accuracy_real': 0.9622282177432153, 'accuracy_fake': 0.07827312323853446}.
+2024-08-14 17:21:54,435 - root - INFO - acc 0.4731 acc_real 0.9622 acc_fake 0.0783
+2024-08-14 17:21:54,435 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.380580204839649.
+
+
+2024-08-14 17:21:54,435 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 17:21:54,436 - root - INFO - best param lr: 0.0001
+2024-08-14 17:21:54,436 - root - INFO - best metric:{'metric': 0.380580204839649}
+2024-08-14 17:21:54,436 - root - INFO - --------------------------------------
+
+2024-08-14 17:23:16,417 - root - INFO - start training......
+2024-08-14 17:24:10,582 - root - INFO - start testing......
+2024-08-14 17:24:10,583 - root - INFO - test score: {'auc': 0.5686568139467469, 'spauc': 0.5007737897097267, 'metric': 0.514678951024051, 'f1_real': 0.4128465057863102, 'f1_fake': 0.6165113962617917, 'recall': 0.564860042590509, 'recall_real': 0.2947732513451191, 'recall_fake': 0.8349468338358991, 'precision': 0.5886919911437578, 'precision_real': 0.688715953307393, 'precision_fake': 0.4886680289801226, 'acc': 0.5360459346423762, 'accuracy_real': 0.8349468338358991, 'accuracy_fake': 0.2947732513451191}.
+2024-08-14 17:24:10,583 - root - INFO - acc 0.5360 acc_real 0.8349 acc_fake 0.2948
+2024-08-14 17:24:10,583 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.514678951024051.
+
+
+2024-08-14 17:24:10,583 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 17:24:10,584 - root - INFO - best param lr: 0.0001
+2024-08-14 17:24:10,584 - root - INFO - best metric:{'metric': 0.514678951024051}
+2024-08-14 17:24:10,584 - root - INFO - --------------------------------------
+
+2024-08-14 17:24:55,915 - root - INFO - start training......
+2024-08-14 17:25:42,703 - root - INFO - start testing......
+2024-08-14 17:25:42,704 - root - INFO - test score: {'auc': 0.5506099386068356, 'spauc': 0.4965887292096669, 'metric': 0.5408422256900988, 'f1_real': 0.5540242557883132, 'f1_fake': 0.5276601955918844, 'recall': 0.5443534638975476, 'recall_real': 0.5149884704073789, 'recall_fake': 0.5737184573877162, 'precision': 0.5439553372032451, 'precision_real': 0.5994631673128542, 'precision_fake': 0.488447507093636, 'acc': 0.5412206705890693, 'accuracy_real': 0.5737184573877162, 'accuracy_fake': 0.5149884704073789}.
+2024-08-14 17:25:42,704 - root - INFO - acc 0.5412 acc_real 0.5737 acc_fake 0.5150
+2024-08-14 17:25:42,704 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5408422256900988.
+
+
+2024-08-14 17:25:42,704 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 17:25:42,705 - root - INFO - best param lr: 0.0001
+2024-08-14 17:25:42,705 - root - INFO - best metric:{'metric': 0.5408422256900988}
+2024-08-14 17:25:42,705 - root - INFO - --------------------------------------
+
+2024-08-14 17:31:03,279 - root - INFO - start training......
+2024-08-14 17:32:01,662 - root - INFO - start testing......
+2024-08-14 17:32:01,662 - root - INFO - test score: {'auc': 0.5283111384253353, 'spauc': 0.5044047300299497, 'metric': 0.3604759415914641, 'f1_real': 0.09713183899734876, 'f1_fake': 0.6238200441855795, 'recall': 0.5187511057604942, 'recall_real': 0.05162695362541635, 'recall_fake': 0.9858752578955722, 'precision': 0.6376835836849004, 'precision_real': 0.8191056910569106, 'precision_fake': 0.4562614763128902, 'acc': 0.46891614092294603, 'accuracy_real': 0.9858752578955722, 'accuracy_fake': 0.05162695362541635}.
+2024-08-14 17:32:01,663 - root - INFO - acc 0.4689 acc_real 0.9859 acc_fake 0.0516
+2024-08-14 17:32:01,663 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.3604759415914641.
+
+
+2024-08-14 17:32:01,663 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 17:32:01,663 - root - INFO - best param lr: 0.0001
+2024-08-14 17:32:01,664 - root - INFO - best metric:{'metric': 0.3604759415914641}
+2024-08-14 17:32:01,664 - root - INFO - --------------------------------------
+
+2024-08-14 17:48:52,290 - root - INFO - start training......
+2024-08-14 17:52:19,013 - root - INFO - start training......
+2024-08-14 17:52:58,992 - root - INFO - start training......
+2024-08-14 17:54:38,625 - root - INFO - start training......
+2024-08-14 17:57:08,169 - root - INFO - start training......
+2024-08-14 18:02:22,435 - root - INFO - start training......
+2024-08-14 18:08:17,269 - root - INFO - start training......
+2024-08-14 18:09:11,701 - root - INFO - start training......
+2024-08-14 18:12:03,285 - root - INFO - start training......
+2024-08-14 18:24:09,002 - root - INFO - start training......
+2024-08-14 18:24:40,005 - root - INFO - start testing......
+2024-08-14 18:24:40,005 - root - INFO - test score: {'auc': 0.6785513895897826, 'spauc': 0.5535962149926662, 'metric': 0.6405326475671591, 'f1_real': 0.662240663900415, 'f1_fake': 0.6188246312339031, 'recall': 0.6429881863857807, 'recall_real': 0.7137745974955277, 'recall_fake': 0.5722017752760338, 'precision': 0.6456830756773777, 'precision_real': 0.6176470588235294, 'precision_fake': 0.6737190925312261, 'acc': 0.6418435815641843, 'accuracy_real': 0.5722017752760338, 'accuracy_fake': 0.7137745974955277}.
+2024-08-14 18:24:40,006 - root - INFO - acc 0.6418 acc_real 0.5722 acc_fake 0.7138
+2024-08-14 18:24:40,006 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6405326475671591.
+
+
+2024-08-14 18:24:40,006 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:24:40,006 - root - INFO - best param lr: 0.0001
+2024-08-14 18:24:40,006 - root - INFO - best metric:{'metric': 0.6405326475671591}
+2024-08-14 18:24:40,007 - root - INFO - --------------------------------------
+
+2024-08-14 18:29:22,418 - root - INFO - start training......
+2024-08-14 18:29:55,512 - root - INFO - start testing......
+2024-08-14 18:29:55,513 - root - INFO - test score: {'auc': 0.6810943588375153, 'spauc': 0.5522927175018492, 'metric': 0.6002147397474169, 'f1_real': 0.6768208252561617, 'f1_fake': 0.5236086542386721, 'recall': 0.6181539092826898, 'recall_real': 0.8197674418604651, 'recall_fake': 0.4165403767049145, 'precision': 0.6405431910226754, 'precision_real': 0.576324477283446, 'precision_fake': 0.7047619047619048, 'acc': 0.6148938510614894, 'accuracy_real': 0.4165403767049145, 'accuracy_fake': 0.8197674418604651}.
+2024-08-14 18:29:55,513 - root - INFO - acc 0.6149 acc_real 0.4165 acc_fake 0.8198
+2024-08-14 18:29:55,513 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6002147397474169.
+
+
+2024-08-14 18:29:55,513 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:29:55,513 - root - INFO - best param lr: 0.0001
+2024-08-14 18:29:55,514 - root - INFO - best metric:{'metric': 0.6002147397474169}
+2024-08-14 18:29:55,514 - root - INFO - --------------------------------------
+
+2024-08-14 18:30:33,042 - root - INFO - start training......
+2024-08-14 18:31:06,926 - root - INFO - start testing......
+2024-08-14 18:31:06,926 - root - INFO - test score: {'auc': 0.6921627961197837, 'spauc': 0.5397146725069443, 'metric': 0.6160226170885867, 'f1_real': 0.6740563784042046, 'f1_fake': 0.5579888557729689, 'recall': 0.6274016797307226, 'recall_real': 0.7886851520572451, 'recall_fake': 0.46611820740420007, 'precision': 0.6417422165756757, 'precision_real': 0.5885199399299182, 'precision_fake': 0.6949644932214332, 'acc': 0.6247937520624793, 'accuracy_real': 0.46611820740420007, 'accuracy_fake': 0.7886851520572451}.
+2024-08-14 18:31:06,926 - root - INFO - acc 0.6248 acc_real 0.4661 acc_fake 0.7887
+2024-08-14 18:31:06,926 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6160226170885867.
+
+
+2024-08-14 18:31:06,927 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:31:06,927 - root - INFO - best param lr: 0.0001
+2024-08-14 18:31:06,927 - root - INFO - best metric:{'metric': 0.6160226170885867}
+2024-08-14 18:31:06,927 - root - INFO - --------------------------------------
+
+2024-08-14 18:31:30,158 - root - INFO - start training......
+2024-08-14 18:32:09,089 - root - INFO - start testing......
+2024-08-14 18:32:09,089 - root - INFO - test score: {'auc': 0.73328092606528, 'spauc': 0.5628652955022034, 'metric': 0.637966108640857, 'f1_real': 0.6985772166211249, 'f1_fake': 0.5773550006605892, 'recall': 0.6509908565809496, 'recall_real': 0.8289355992844365, 'recall_fake': 0.47304611387746265, 'precision': 0.6721627902483722, 'precision_real': 0.6036476143950497, 'precision_fake': 0.7406779661016949, 'acc': 0.6481135188648114, 'accuracy_real': 0.47304611387746265, 'accuracy_fake': 0.8289355992844365}.
+2024-08-14 18:32:09,089 - root - INFO - acc 0.6481 acc_real 0.4730 acc_fake 0.8289
+2024-08-14 18:32:09,090 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.637966108640857.
+
+
+2024-08-14 18:32:09,090 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:32:09,090 - root - INFO - best param lr: 0.0001
+2024-08-14 18:32:09,090 - root - INFO - best metric:{'metric': 0.637966108640857}
+2024-08-14 18:32:09,090 - root - INFO - --------------------------------------
+
+2024-08-14 18:32:29,595 - root - INFO - start training......
+2024-08-14 18:33:01,036 - root - INFO - start testing......
+2024-08-14 18:33:01,037 - root - INFO - test score: {'auc': 0.6785513895897826, 'spauc': 0.5535962149926662, 'metric': 0.6405326475671591, 'f1_real': 0.662240663900415, 'f1_fake': 0.6188246312339031, 'recall': 0.6429881863857807, 'recall_real': 0.7137745974955277, 'recall_fake': 0.5722017752760338, 'precision': 0.6456830756773777, 'precision_real': 0.6176470588235294, 'precision_fake': 0.6737190925312261, 'acc': 0.6418435815641843, 'accuracy_real': 0.5722017752760338, 'accuracy_fake': 0.7137745974955277}.
+2024-08-14 18:33:01,037 - root - INFO - acc 0.6418 acc_real 0.5722 acc_fake 0.7138
+2024-08-14 18:33:01,037 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6405326475671591.
+
+
+2024-08-14 18:33:01,037 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:33:01,038 - root - INFO - best param lr: 0.0001
+2024-08-14 18:33:01,038 - root - INFO - best metric:{'metric': 0.6405326475671591}
+2024-08-14 18:33:01,038 - root - INFO - --------------------------------------
+
+2024-08-14 18:33:41,781 - root - INFO - start training......
+2024-08-14 18:34:08,091 - root - INFO - start testing......
+2024-08-14 18:34:08,091 - root - INFO - test score: {'auc': 0.6762362215489339, 'spauc': 0.5366351794317625, 'metric': 0.6261217207479848, 'f1_real': 0.6587759231158321, 'f1_fake': 0.5934675183801373, 'recall': 0.6305508359536967, 'recall_real': 0.7280858676207513, 'recall_fake': 0.5330158042866421, 'precision': 0.6354502036112888, 'precision_real': 0.6015148716053944, 'precision_fake': 0.6693855356171833, 'acc': 0.6289737102628974, 'accuracy_real': 0.5330158042866421, 'accuracy_fake': 0.7280858676207513}.
+2024-08-14 18:34:08,091 - root - INFO - acc 0.6290 acc_real 0.5330 acc_fake 0.7281
+2024-08-14 18:34:08,092 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6261217207479848.
+
+
+2024-08-14 18:34:08,093 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:34:08,093 - root - INFO - best param lr: 0.0001
+2024-08-14 18:34:08,093 - root - INFO - best metric:{'metric': 0.6261217207479848}
+2024-08-14 18:34:08,093 - root - INFO - --------------------------------------
+
+2024-08-14 18:36:52,071 - root - INFO - start training......
+2024-08-14 18:37:48,811 - root - INFO - start testing......
+2024-08-14 18:37:48,812 - root - INFO - test score: {'auc': 0.5786416151912411, 'spauc': 0.502701321965917, 'metric': 0.5589673956668946, 'f1_real': 0.5456804560736734, 'f1_fake': 0.5722543352601156, 'recall': 0.569058567663068, 'recall_real': 0.4782218806046631, 'recall_fake': 0.6598952547214728, 'precision': 0.5702297632214265, 'precision_real': 0.6352961198093942, 'precision_fake': 0.5051634066334588, 'acc': 0.5593676897993903, 'accuracy_real': 0.6598952547214728, 'accuracy_fake': 0.4782218806046631}.
+2024-08-14 18:37:48,812 - root - INFO - acc 0.5594 acc_real 0.6599 acc_fake 0.4782
+2024-08-14 18:37:48,812 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5589673956668946.
+
+
+2024-08-14 18:37:48,813 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:37:48,813 - root - INFO - best param lr: 0.0001
+2024-08-14 18:37:48,813 - root - INFO - best metric:{'metric': 0.5589673956668946}
+2024-08-14 18:37:48,814 - root - INFO - --------------------------------------
+
+2024-08-14 18:38:25,352 - root - INFO - start training......
+2024-08-14 18:39:19,939 - root - INFO - start testing......
+2024-08-14 18:39:19,939 - root - INFO - test score: {'auc': 0.5647927566451046, 'spauc': 0.5013277279792621, 'metric': 0.5445497036018209, 'f1_real': 0.5573024410426148, 'f1_fake': 0.5317969661610269, 'recall': 0.5481585100323862, 'recall_real': 0.5176787086856265, 'recall_fake': 0.5786383113791461, 'precision': 0.5477330087649426, 'precision_real': 0.603494623655914, 'precision_fake': 0.4919713938739711, 'acc': 0.5449067838661658, 'accuracy_real': 0.5786383113791461, 'accuracy_fake': 0.5176787086856265}.
+2024-08-14 18:39:19,939 - root - INFO - acc 0.5449 acc_real 0.5786 acc_fake 0.5177
+2024-08-14 18:39:19,939 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5445497036018209.
+
+
+2024-08-14 18:39:19,941 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:39:19,941 - root - INFO - best param lr: 0.0001
+2024-08-14 18:39:19,942 - root - INFO - best metric:{'metric': 0.5445497036018209}
+2024-08-14 18:39:19,942 - root - INFO - --------------------------------------
+
+2024-08-14 18:41:32,915 - root - INFO - start training......
+2024-08-14 18:42:30,358 - root - INFO - start testing......
+2024-08-14 18:42:30,359 - root - INFO - test score: {'auc': 0.5763251854617791, 'spauc': 0.5032235329387348, 'metric': 0.5508467574034299, 'f1_real': 0.5303424199658323, 'f1_fake': 0.5713510948410276, 'recall': 0.5630616201008075, 'recall_real': 0.4573405073020753, 'recall_fake': 0.6687827328995397, 'precision': 0.5648873835944993, 'precision_real': 0.6310765423369277, 'precision_fake': 0.498698224852071, 'acc': 0.5517828028638264, 'accuracy_real': 0.6687827328995397, 'accuracy_fake': 0.4573405073020753}.
+2024-08-14 18:42:30,359 - root - INFO - acc 0.5518 acc_real 0.6688 acc_fake 0.4573
+2024-08-14 18:42:30,359 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5508467574034299.
+
+
+2024-08-14 18:42:30,359 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:42:30,359 - root - INFO - best param lr: 0.0001
+2024-08-14 18:42:30,360 - root - INFO - best metric:{'metric': 0.5508467574034299}
+2024-08-14 18:42:30,360 - root - INFO - --------------------------------------
+
+2024-08-14 18:43:52,830 - root - INFO - start training......
+2024-08-14 18:44:40,903 - root - INFO - start testing......
+2024-08-14 18:44:40,903 - root - INFO - test score: {'auc': 0.5709861539573183, 'spauc': 0.5037453586897375, 'metric': 0.5416857729252071, 'f1_real': 0.5012051939973563, 'f1_fake': 0.582166351853058, 'recall': 0.561070011010945, 'recall_real': 0.41288752241865234, 'recall_fake': 0.7092524996032376, 'precision': 0.5656447985111192, 'precision_real': 0.6375865479723046, 'precision_fake': 0.49370304904993373, 'acc': 0.5452612178351173, 'accuracy_real': 0.7092524996032376, 'accuracy_fake': 0.41288752241865234}.
+2024-08-14 18:44:40,903 - root - INFO - acc 0.5453 acc_real 0.7093 acc_fake 0.4129
+2024-08-14 18:44:40,903 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5416857729252071.
+
+
+2024-08-14 18:44:40,904 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:44:40,904 - root - INFO - best param lr: 0.0001
+2024-08-14 18:44:40,904 - root - INFO - best metric:{'metric': 0.5416857729252071}
+2024-08-14 18:44:40,904 - root - INFO - --------------------------------------
+
+2024-08-14 18:45:35,067 - root - INFO - start training......
+2024-08-14 18:46:25,440 - root - INFO - start testing......
+2024-08-14 18:46:25,440 - root - INFO - test score: {'auc': 0.5709861539573183, 'spauc': 0.5037453586897375, 'metric': 0.5416857729252071, 'f1_real': 0.5012051939973563, 'f1_fake': 0.582166351853058, 'recall': 0.561070011010945, 'recall_real': 0.41288752241865234, 'recall_fake': 0.7092524996032376, 'precision': 0.5656447985111192, 'precision_real': 0.6375865479723046, 'precision_fake': 0.49370304904993373, 'acc': 0.5452612178351173, 'accuracy_real': 0.7092524996032376, 'accuracy_fake': 0.41288752241865234}.
+2024-08-14 18:46:25,440 - root - INFO - acc 0.5453 acc_real 0.7093 acc_fake 0.4129
+2024-08-14 18:46:25,440 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5416857729252071.
+
+
+2024-08-14 18:46:25,441 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:46:25,441 - root - INFO - best param lr: 0.0001
+2024-08-14 18:46:25,441 - root - INFO - best metric:{'metric': 0.5416857729252071}
+2024-08-14 18:46:25,441 - root - INFO - --------------------------------------
+
+2024-08-14 18:47:05,277 - root - INFO - start training......
+2024-08-14 18:48:15,045 - root - INFO - start testing......
+2024-08-14 18:48:15,045 - root - INFO - test score: {'auc': 0.5839806873580047, 'spauc': 0.5059926571542945, 'metric': 0.48389142263873997, 'f1_real': 0.3501722158438576, 'f1_fake': 0.6176106294336223, 'recall': 0.5524658982548675, 'recall_real': 0.23443504996156803, 'recall_fake': 0.870496746548167, 'precision': 0.5850947539531184, 'precision_real': 0.691609977324263, 'precision_fake': 0.47857953058197367, 'acc': 0.5185368965761679, 'accuracy_real': 0.870496746548167, 'accuracy_fake': 0.23443504996156803}.
+2024-08-14 18:48:15,045 - root - INFO - acc 0.5185 acc_real 0.8705 acc_fake 0.2344
+2024-08-14 18:48:15,045 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.48389142263873997.
+
+
+2024-08-14 18:48:15,046 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:48:15,046 - root - INFO - best param lr: 0.0001
+2024-08-14 18:48:15,046 - root - INFO - best metric:{'metric': 0.48389142263873997}
+2024-08-14 18:48:15,046 - root - INFO - --------------------------------------
+
+2024-08-14 18:50:42,291 - root - INFO - start training......
+2024-08-14 18:51:39,712 - root - INFO - start testing......
+2024-08-14 18:51:39,712 - root - INFO - test score: {'auc': 0.5763251854617791, 'spauc': 0.5032235329387348, 'metric': 0.5508467574034299, 'f1_real': 0.5303424199658323, 'f1_fake': 0.5713510948410276, 'recall': 0.5630616201008075, 'recall_real': 0.4573405073020753, 'recall_fake': 0.6687827328995397, 'precision': 0.5648873835944993, 'precision_real': 0.6310765423369277, 'precision_fake': 0.498698224852071, 'acc': 0.5517828028638264, 'accuracy_real': 0.6687827328995397, 'accuracy_fake': 0.4573405073020753}.
+2024-08-14 18:51:39,712 - root - INFO - acc 0.5518 acc_real 0.6688 acc_fake 0.4573
+2024-08-14 18:51:39,712 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5508467574034299.
+
+
+2024-08-14 18:51:39,713 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:51:39,713 - root - INFO - best param lr: 0.0001
+2024-08-14 18:51:39,713 - root - INFO - best metric:{'metric': 0.5508467574034299}
+2024-08-14 18:51:39,713 - root - INFO - --------------------------------------
+
+2024-08-14 18:52:58,345 - root - INFO - start training......
+2024-08-14 18:54:01,536 - root - INFO - start testing......
+2024-08-14 18:54:01,536 - root - INFO - test score: {'auc': 0.5628609719680998, 'spauc': 0.5052755239430264, 'metric': 0.5279230472568858, 'f1_real': 0.6019119990194877, 'f1_fake': 0.4539340954942838, 'recall': 0.5288174247563403, 'recall_real': 0.6291314373558801, 'recall_fake': 0.4285034121568005, 'precision': 0.5297619572557399, 'precision_real': 0.5769501879699248, 'precision_fake': 0.48257372654155495, 'acc': 0.5395193875381017, 'accuracy_real': 0.4285034121568005, 'accuracy_fake': 0.6291314373558801}.
+2024-08-14 18:54:01,536 - root - INFO - acc 0.5395 acc_real 0.4285 acc_fake 0.6291
+2024-08-14 18:54:01,536 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5279230472568858.
+
+
+2024-08-14 18:54:01,537 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:54:01,537 - root - INFO - best param lr: 0.0001
+2024-08-14 18:54:01,537 - root - INFO - best metric:{'metric': 0.5279230472568858}
+2024-08-14 18:54:01,537 - root - INFO - --------------------------------------
+
+2024-08-14 18:54:36,904 - root - INFO - start training......
+2024-08-14 18:55:40,972 - root - INFO - start testing......
+2024-08-14 18:55:40,973 - root - INFO - test score: {'auc': 0.5618601507115719, 'spauc': 0.5044619247688888, 'metric': 0.5521361922403298, 'f1_real': 0.5890904328465719, 'f1_fake': 0.5151819516340879, 'recall': 0.5526728897067976, 'recall_real': 0.5762234178836793, 'recall_fake': 0.5291223615299159, 'precision': 0.5522512263896175, 'precision_real': 0.6025452109845948, 'precision_fake': 0.5019572417946402, 'acc': 0.5551853689657616, 'accuracy_real': 0.5291223615299159, 'accuracy_fake': 0.5762234178836793}.
+2024-08-14 18:55:40,973 - root - INFO - acc 0.5552 acc_real 0.5291 acc_fake 0.5762
+2024-08-14 18:55:40,973 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5521361922403298.
+
+
+2024-08-14 18:55:40,973 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:55:40,974 - root - INFO - best param lr: 0.0001
+2024-08-14 18:55:40,974 - root - INFO - best metric:{'metric': 0.5521361922403298}
+2024-08-14 18:55:40,974 - root - INFO - --------------------------------------
+
+2024-08-14 18:56:52,102 - root - INFO - start training......
+2024-08-14 18:57:56,908 - root - INFO - start testing......
+2024-08-14 18:57:56,908 - root - INFO - test score: {'auc': 0.5628609719680998, 'spauc': 0.5052755239430264, 'metric': 0.5279230472568858, 'f1_real': 0.6019119990194877, 'f1_fake': 0.4539340954942838, 'recall': 0.5288174247563403, 'recall_real': 0.6291314373558801, 'recall_fake': 0.4285034121568005, 'precision': 0.5297619572557399, 'precision_real': 0.5769501879699248, 'precision_fake': 0.48257372654155495, 'acc': 0.5395193875381017, 'accuracy_real': 0.4285034121568005, 'accuracy_fake': 0.6291314373558801}.
+2024-08-14 18:57:56,908 - root - INFO - acc 0.5395 acc_real 0.4285 acc_fake 0.6291
+2024-08-14 18:57:56,908 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5279230472568858.
+
+
+2024-08-14 18:57:56,909 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 18:57:56,909 - root - INFO - best param lr: 0.0001
+2024-08-14 18:57:56,909 - root - INFO - best metric:{'metric': 0.5279230472568858}
+2024-08-14 18:57:56,909 - root - INFO - --------------------------------------
+
+2024-08-14 20:08:43,188 - root - INFO - start training......
+2024-08-14 20:09:48,996 - root - INFO - start testing......
+2024-08-14 20:09:48,996 - root - INFO - test score: {'auc': 0.5628609719680998, 'spauc': 0.5052755239430264, 'metric': 0.5279230472568858, 'f1_real': 0.6019119990194877, 'f1_fake': 0.4539340954942838, 'recall': 0.5288174247563403, 'recall_real': 0.6291314373558801, 'recall_fake': 0.4285034121568005, 'precision': 0.5297619572557399, 'precision_real': 0.5769501879699248, 'precision_fake': 0.48257372654155495, 'acc': 0.5395193875381017, 'accuracy_real': 0.4285034121568005, 'accuracy_fake': 0.6291314373558801}.
+2024-08-14 20:09:48,996 - root - INFO - acc 0.5395 acc_real 0.4285 acc_fake 0.6291
+2024-08-14 20:09:48,996 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5279230472568858.
+
+
+2024-08-14 20:09:48,997 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 20:09:48,997 - root - INFO - best param lr: 0.0001
+2024-08-14 20:09:48,997 - root - INFO - best metric:{'metric': 0.5279230472568858}
+2024-08-14 20:09:48,997 - root - INFO - --------------------------------------
+
+2024-08-14 20:35:40,612 - root - INFO - start training......
+2024-08-14 20:36:46,914 - root - INFO - start testing......
+2024-08-14 20:36:46,914 - root - INFO - test score: {'auc': 0.5628609719680998, 'spauc': 0.5052755239430264, 'metric': 0.5279230472568858, 'f1_real': 0.6019119990194877, 'f1_fake': 0.4539340954942838, 'recall': 0.5288174247563403, 'recall_real': 0.6291314373558801, 'recall_fake': 0.4285034121568005, 'precision': 0.5297619572557399, 'precision_real': 0.5769501879699248, 'precision_fake': 0.48257372654155495, 'acc': 0.5395193875381017, 'accuracy_real': 0.4285034121568005, 'accuracy_fake': 0.6291314373558801}.
+2024-08-14 20:36:46,914 - root - INFO - acc 0.5395 acc_real 0.4285 acc_fake 0.6291
+2024-08-14 20:36:46,915 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5279230472568858.
+
+
+2024-08-14 20:36:46,915 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 20:36:46,915 - root - INFO - best param lr: 0.0001
+2024-08-14 20:36:46,915 - root - INFO - best metric:{'metric': 0.5279230472568858}
+2024-08-14 20:36:46,915 - root - INFO - --------------------------------------
+
+2024-08-14 21:08:21,386 - root - INFO - start training......
+2024-08-14 21:09:24,340 - root - INFO - start testing......
+2024-08-14 21:09:24,340 - root - INFO - test score: {'auc': 0.595022403505611, 'spauc': 0.5083724826238585, 'metric': 0.5797434969910924, 'f1_real': 0.6211524811253791, 'f1_fake': 0.5383345128568058, 'recall': 0.5799120478458678, 'recall_real': 0.6165769920573918, 'recall_fake': 0.5432471036343438, 'precision': 0.5796531802239298, 'precision_real': 0.6257963853855155, 'precision_fake': 0.5335099750623441, 'acc': 0.5838236336570497, 'accuracy_real': 0.5432471036343438, 'accuracy_fake': 0.6165769920573918}.
+2024-08-14 21:09:24,341 - root - INFO - acc 0.5838 acc_real 0.5432 acc_fake 0.6166
+2024-08-14 21:09:24,341 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5797434969910924.
+
+
+2024-08-14 21:09:24,341 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:09:24,341 - root - INFO - best param lr: 0.0001
+2024-08-14 21:09:24,342 - root - INFO - best metric:{'metric': 0.5797434969910924}
+2024-08-14 21:09:24,342 - root - INFO - --------------------------------------
+
+2024-08-14 21:10:37,967 - root - INFO - start training......
+2024-08-14 21:11:50,679 - root - INFO - start testing......
+2024-08-14 21:11:50,680 - root - INFO - test score: {'auc': 0.5827276988312393, 'spauc': 0.5061685751165322, 'metric': 0.5390560320118183, 'f1_real': 0.5031137080033826, 'f1_fake': 0.5749983560202538, 'recall': 0.5565114314134911, 'recall_real': 0.41916474506789647, 'recall_fake': 0.6938581177590859, 'precision': 0.5600073972196868, 'precision_real': 0.6291097865795039, 'precision_fake': 0.49090500785986974, 'acc': 0.5418586517331822, 'accuracy_real': 0.6938581177590859, 'accuracy_fake': 0.41916474506789647}.
+2024-08-14 21:11:50,680 - root - INFO - acc 0.5419 acc_real 0.6939 acc_fake 0.4192
+2024-08-14 21:11:50,680 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5390560320118183.
+
+
+2024-08-14 21:11:50,680 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:11:50,680 - root - INFO - best param lr: 0.0001
+2024-08-14 21:11:50,680 - root - INFO - best metric:{'metric': 0.5390560320118183}
+2024-08-14 21:11:50,681 - root - INFO - --------------------------------------
+
+2024-08-14 21:12:10,643 - root - INFO - start training......
+2024-08-14 21:13:22,863 - root - INFO - start testing......
+2024-08-14 21:13:22,863 - root - INFO - test score: {'auc': 0.5827276988312393, 'spauc': 0.5061685751165322, 'metric': 0.5390560320118183, 'f1_real': 0.5031137080033826, 'f1_fake': 0.5749983560202538, 'recall': 0.5565114314134911, 'recall_real': 0.41916474506789647, 'recall_fake': 0.6938581177590859, 'precision': 0.5600073972196868, 'precision_real': 0.6291097865795039, 'precision_fake': 0.49090500785986974, 'acc': 0.5418586517331822, 'accuracy_real': 0.6938581177590859, 'accuracy_fake': 0.41916474506789647}.
+2024-08-14 21:13:22,864 - root - INFO - acc 0.5419 acc_real 0.6939 acc_fake 0.4192
+2024-08-14 21:13:22,864 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5390560320118183.
+
+
+2024-08-14 21:13:22,864 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:13:22,864 - root - INFO - best param lr: 0.0001
+2024-08-14 21:13:22,865 - root - INFO - best metric:{'metric': 0.5390560320118183}
+2024-08-14 21:13:22,865 - root - INFO - --------------------------------------
+
+2024-08-14 21:13:53,469 - root - INFO - start training......
+2024-08-14 21:14:45,413 - root - INFO - start testing......
+2024-08-14 21:14:45,413 - root - INFO - test score: {'auc': 0.5927436778963341, 'spauc': 0.5114307800153008, 'metric': 0.5609515987140232, 'f1_real': 0.5436162361623617, 'f1_fake': 0.5782869612656848, 'recall': 0.5723628067121914, 'recall_real': 0.47181655137074047, 'recall_fake': 0.6729090620536423, 'precision': 0.574092952626255, 'precision_real': 0.6411908077994429, 'precision_fake': 0.506995097453067, 'acc': 0.5616360672006805, 'accuracy_real': 0.6729090620536423, 'accuracy_fake': 0.47181655137074047}.
+2024-08-14 21:14:45,414 - root - INFO - acc 0.5616 acc_real 0.6729 acc_fake 0.4718
+2024-08-14 21:14:45,414 - root - INFO - lr: 0.0003, aug_prob: 0.1, avg test score: 0.5609515987140232.
+
+
+2024-08-14 21:14:45,415 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:14:45,415 - root - INFO - best param lr: 0.0003
+2024-08-14 21:14:45,415 - root - INFO - best metric:{'metric': 0.5609515987140232}
+2024-08-14 21:14:45,415 - root - INFO - --------------------------------------
+
+2024-08-14 21:15:43,839 - root - INFO - start training......
+2024-08-14 21:16:35,685 - root - INFO - start testing......
+2024-08-14 21:16:35,685 - root - INFO - test score: {'auc': 0.5714338764068496, 'spauc': 0.5010737062940089, 'metric': 0.43625597970678387, 'f1_real': 0.2507923093175576, 'f1_fake': 0.6217196500960102, 'recall': 0.5384975332010751, 'recall_real': 0.15206251601332307, 'recall_fake': 0.9249325503888272, 'precision': 0.5916427580652811, 'precision_real': 0.7150602409638555, 'precision_fake': 0.4682252751667068, 'acc': 0.4972708584390728, 'accuracy_real': 0.9249325503888272, 'accuracy_fake': 0.15206251601332307}.
+2024-08-14 21:16:35,685 - root - INFO - acc 0.4973 acc_real 0.9249 acc_fake 0.1521
+2024-08-14 21:16:35,686 - root - INFO - lr: 5e-05, aug_prob: 0.1, avg test score: 0.43625597970678387.
+
+
+2024-08-14 21:16:35,686 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:16:35,686 - root - INFO - best param lr: 5e-05
+2024-08-14 21:16:35,686 - root - INFO - best metric:{'metric': 0.43625597970678387}
+2024-08-14 21:16:35,687 - root - INFO - --------------------------------------
+
+2024-08-14 21:17:15,482 - root - INFO - start training......
+2024-08-14 21:17:58,660 - root - INFO - start testing......
+2024-08-14 21:17:58,660 - root - INFO - test score: {'auc': 0.5760347651302701, 'spauc': 0.504213478099349, 'metric': 0.44811725132869107, 'f1_real': 0.277235855837355, 'f1_fake': 0.6189986468200271, 'recall': 0.5402094466417675, 'recall_real': 0.17294388931591084, 'recall_fake': 0.9074750039676241, 'precision': 0.5840428887188533, 'precision_real': 0.6983962752198655, 'precision_fake': 0.4696895022178413, 'acc': 0.5010278585099596, 'accuracy_real': 0.9074750039676241, 'accuracy_fake': 0.17294388931591084}.
+2024-08-14 21:17:58,661 - root - INFO - acc 0.5010 acc_real 0.9075 acc_fake 0.1729
+2024-08-14 21:17:58,661 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.44811725132869107.
+
+
+2024-08-14 21:17:58,661 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:17:58,662 - root - INFO - best param lr: 0.0001
+2024-08-14 21:17:58,662 - root - INFO - best metric:{'metric': 0.44811725132869107}
+2024-08-14 21:17:58,662 - root - INFO - --------------------------------------
+
+2024-08-14 21:18:21,735 - root - INFO - start training......
+2024-08-14 21:19:10,917 - root - INFO - start testing......
+2024-08-14 21:19:10,917 - root - INFO - test score: {'auc': 0.5897095585240935, 'spauc': 0.5068759065727267, 'metric': 0.556518761651744, 'f1_real': 0.5272823859755635, 'f1_fake': 0.5857551373279244, 'recall': 0.5719894759454626, 'recall_real': 0.44504227517294387, 'recall_fake': 0.6989366767179813, 'precision': 0.5754639026027035, 'precision_real': 0.646806926084528, 'precision_fake': 0.5041208791208791, 'acc': 0.5584461614801163, 'accuracy_real': 0.6989366767179813, 'accuracy_fake': 0.44504227517294387}.
+2024-08-14 21:19:10,917 - root - INFO - acc 0.5584 acc_real 0.6989 acc_fake 0.4450
+2024-08-14 21:19:10,917 - root - INFO - lr: 0.0005, aug_prob: 0.1, avg test score: 0.556518761651744.
+
+
+2024-08-14 21:19:10,918 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:19:10,918 - root - INFO - best param lr: 0.0005
+2024-08-14 21:19:10,918 - root - INFO - best metric:{'metric': 0.556518761651744}
+2024-08-14 21:19:10,918 - root - INFO - --------------------------------------
+
+2024-08-14 21:19:33,130 - root - INFO - start training......
+2024-08-14 21:20:35,235 - root - INFO - start testing......
+2024-08-14 21:20:35,235 - root - INFO - test score: {'auc': 0.595022403505611, 'spauc': 0.5083724826238585, 'metric': 0.5797434969910924, 'f1_real': 0.6211524811253791, 'f1_fake': 0.5383345128568058, 'recall': 0.5799120478458678, 'recall_real': 0.6165769920573918, 'recall_fake': 0.5432471036343438, 'precision': 0.5796531802239298, 'precision_real': 0.6257963853855155, 'precision_fake': 0.5335099750623441, 'acc': 0.5838236336570497, 'accuracy_real': 0.5432471036343438, 'accuracy_fake': 0.6165769920573918}.
+2024-08-14 21:20:35,235 - root - INFO - acc 0.5838 acc_real 0.5432 acc_fake 0.6166
+2024-08-14 21:20:35,236 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5797434969910924.
+
+
+2024-08-14 21:20:35,236 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:20:35,236 - root - INFO - best param lr: 0.0001
+2024-08-14 21:20:35,236 - root - INFO - best metric:{'metric': 0.5797434969910924}
+2024-08-14 21:20:35,236 - root - INFO - --------------------------------------
+
+2024-08-14 21:22:07,671 - root - INFO - start training......
+2024-08-14 21:23:13,398 - root - INFO - start testing......
+2024-08-14 21:23:13,398 - root - INFO - test score: {'auc': 0.5921127819386834, 'spauc': 0.5079483106029884, 'metric': 0.539364841936568, 'f1_real': 0.49218132996367087, 'f1_fake': 0.586548353909465, 'recall': 0.5615167372340599, 'recall_real': 0.3991801178580579, 'recall_fake': 0.7238533566100619, 'precision': 0.567354088083803, 'precision_real': 0.6416803953871499, 'precision_fake': 0.49302778078045617, 'acc': 0.5441979159282626, 'accuracy_real': 0.7238533566100619, 'accuracy_fake': 0.3991801178580579}.
+2024-08-14 21:23:13,399 - root - INFO - acc 0.5442 acc_real 0.7239 acc_fake 0.3992
+2024-08-14 21:23:13,399 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.539364841936568.
+
+
+2024-08-14 21:23:13,399 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-14 21:23:13,399 - root - INFO - best param lr: 0.0001
+2024-08-14 21:23:13,399 - root - INFO - best metric:{'metric': 0.539364841936568}
+2024-08-14 21:23:13,400 - root - INFO - --------------------------------------
+
+2024-08-15 12:07:58,776 - root - INFO - start training......
+2024-08-15 12:08:38,750 - root - INFO - start testing......
+2024-08-15 12:08:38,750 - root - INFO - test score: {'auc': 0.685536421857142, 'spauc': 0.5588410100786207, 'metric': 0.6407971073641814, 'f1_real': 0.6362927481341205, 'f1_fake': 0.6453014665942421, 'recall': 0.6408183744438949, 'recall_real': 0.6386404293381037, 'recall_fake': 0.6429963195496861, 'precision': 0.6407927325988035, 'precision_real': 0.6339622641509434, 'precision_fake': 0.6476232010466637, 'acc': 0.6408535914640854, 'accuracy_real': 0.6429963195496861, 'accuracy_fake': 0.6386404293381037}.
+2024-08-15 12:08:38,751 - root - INFO - acc 0.6409 acc_real 0.6430 acc_fake 0.6386
+2024-08-15 12:08:38,751 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.6407971073641814.
+
+
+2024-08-15 12:08:38,751 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:08:38,751 - root - INFO - best param lr: 0.0001
+2024-08-15 12:08:38,752 - root - INFO - best metric:{'metric': 0.6407971073641814}
+2024-08-15 12:08:38,752 - root - INFO - --------------------------------------
+
+2024-08-15 12:10:56,443 - root - INFO - start training......
+2024-08-15 12:12:12,219 - root - INFO - start testing......
+2024-08-15 12:12:12,220 - root - INFO - test score: {'auc': 0.5827276988312393, 'spauc': 0.5061685751165322, 'metric': 0.5390560320118183, 'f1_real': 0.5031137080033826, 'f1_fake': 0.5749983560202538, 'recall': 0.5565114314134911, 'recall_real': 0.41916474506789647, 'recall_fake': 0.6938581177590859, 'precision': 0.5600073972196868, 'precision_real': 0.6291097865795039, 'precision_fake': 0.49090500785986974, 'acc': 0.5418586517331822, 'accuracy_real': 0.6938581177590859, 'accuracy_fake': 0.41916474506789647}.
+2024-08-15 12:12:12,220 - root - INFO - acc 0.5419 acc_real 0.6939 acc_fake 0.4192
+2024-08-15 12:12:12,220 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5390560320118183.
+
+
+2024-08-15 12:12:12,220 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:12:12,220 - root - INFO - best param lr: 0.0001
+2024-08-15 12:12:12,221 - root - INFO - best metric:{'metric': 0.5390560320118183}
+2024-08-15 12:12:12,221 - root - INFO - --------------------------------------
+
+2024-08-15 12:12:28,400 - root - INFO - start training......
+2024-08-15 12:13:29,600 - root - INFO - start testing......
+2024-08-15 12:13:29,600 - root - INFO - test score: {'auc': 0.595022403505611, 'spauc': 0.5083724826238585, 'metric': 0.5797434969910924, 'f1_real': 0.6211524811253791, 'f1_fake': 0.5383345128568058, 'recall': 0.5799120478458678, 'recall_real': 0.6165769920573918, 'recall_fake': 0.5432471036343438, 'precision': 0.5796531802239298, 'precision_real': 0.6257963853855155, 'precision_fake': 0.5335099750623441, 'acc': 0.5838236336570497, 'accuracy_real': 0.5432471036343438, 'accuracy_fake': 0.6165769920573918}.
+2024-08-15 12:13:29,600 - root - INFO - acc 0.5838 acc_real 0.5432 acc_fake 0.6166
+2024-08-15 12:13:29,600 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5797434969910924.
+
+
+2024-08-15 12:13:29,601 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:13:29,601 - root - INFO - best param lr: 0.0001
+2024-08-15 12:13:29,601 - root - INFO - best metric:{'metric': 0.5797434969910924}
+2024-08-15 12:13:29,601 - root - INFO - --------------------------------------
+
+2024-08-15 12:22:47,389 - root - INFO - start training......
+2024-08-15 12:23:32,634 - root - INFO - start testing......
+2024-08-15 12:23:32,635 - root - INFO - test score: {'auc': 0.5760347651302701, 'spauc': 0.504213478099349, 'metric': 0.44811725132869107, 'f1_real': 0.277235855837355, 'f1_fake': 0.6189986468200271, 'recall': 0.5402094466417675, 'recall_real': 0.17294388931591084, 'recall_fake': 0.9074750039676241, 'precision': 0.5840428887188533, 'precision_real': 0.6983962752198655, 'precision_fake': 0.4696895022178413, 'acc': 0.5010278585099596, 'accuracy_real': 0.9074750039676241, 'accuracy_fake': 0.17294388931591084}.
+2024-08-15 12:23:32,635 - root - INFO - acc 0.5010 acc_real 0.9075 acc_fake 0.1729
+2024-08-15 12:23:32,635 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.44811725132869107.
+
+
+2024-08-15 12:23:32,636 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:23:32,636 - root - INFO - best param lr: 0.0001
+2024-08-15 12:23:32,636 - root - INFO - best metric:{'metric': 0.44811725132869107}
+2024-08-15 12:23:32,637 - root - INFO - --------------------------------------
+
+2024-08-15 12:24:12,765 - root - INFO - start training......
+2024-08-15 12:24:47,639 - root - INFO - start testing......
+2024-08-15 12:24:47,640 - root - INFO - test score: {'auc': 0.584952180928705, 'spauc': 0.5018787449833659, 'metric': 0.3697292567028284, 'f1_real': 0.11729927870403216, 'f1_fake': 0.6221592347016247, 'recall': 0.5194707980216814, 'recall_real': 0.06354086600051242, 'recall_fake': 0.9754007300428503, 'precision': 0.6093263405243191, 'precision_real': 0.7619047619047619, 'precision_fake': 0.45674791914387636, 'acc': 0.4708300843552846, 'accuracy_real': 0.9754007300428503, 'accuracy_fake': 0.06354086600051242}.
+2024-08-15 12:24:47,640 - root - INFO - acc 0.4708 acc_real 0.9754 acc_fake 0.0635
+2024-08-15 12:24:47,640 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.3697292567028284.
+
+
+2024-08-15 12:24:47,640 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:24:47,641 - root - INFO - best param lr: 0.0001
+2024-08-15 12:24:47,641 - root - INFO - best metric:{'metric': 0.3697292567028284}
+2024-08-15 12:24:47,641 - root - INFO - --------------------------------------
+
+2024-08-15 12:25:20,985 - root - INFO - start training......
+2024-08-15 12:26:24,332 - root - INFO - start testing......
+2024-08-15 12:26:24,332 - root - INFO - test score: {'auc': 0.595022403505611, 'spauc': 0.5083724826238585, 'metric': 0.5797434969910924, 'f1_real': 0.6211524811253791, 'f1_fake': 0.5383345128568058, 'recall': 0.5799120478458678, 'recall_real': 0.6165769920573918, 'recall_fake': 0.5432471036343438, 'precision': 0.5796531802239298, 'precision_real': 0.6257963853855155, 'precision_fake': 0.5335099750623441, 'acc': 0.5838236336570497, 'accuracy_real': 0.5432471036343438, 'accuracy_fake': 0.6165769920573918}.
+2024-08-15 12:26:24,332 - root - INFO - acc 0.5838 acc_real 0.5432 acc_fake 0.6166
+2024-08-15 12:26:24,332 - root - INFO - lr: 0.0001, aug_prob: 0.1, avg test score: 0.5797434969910924.
+
+
+2024-08-15 12:26:24,333 - root - INFO - best model path:./param_model/bigru/parameter_bigru.pkl
+2024-08-15 12:26:24,333 - root - INFO - best param lr: 0.0001
+2024-08-15 12:26:24,333 - root - INFO - best metric:{'metric': 0.5797434969910924}
+2024-08-15 12:26:24,333 - root - INFO - --------------------------------------
+

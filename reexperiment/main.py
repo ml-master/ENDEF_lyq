@@ -5,8 +5,8 @@ from grid_search import Run  # 假设从grid_search模块导入了Run类或函�
 
 # 使用argparse定义命令行参数
 parser = argparse.ArgumentParser()
-parser.add_argument('--model_name', default='mdfend_endef')  # 模型名称，默认为'bigru'
-parser.add_argument('--epoch', type=int, default=50)  # 训练轮数，默认为10
+parser.add_argument('--model_name', default='mdfend_endef')  # 模型名称，默认为'mdfend_endef'
+parser.add_argument('--epoch', type=int, default=20)  # 训练轮数，默认为10
 parser.add_argument('--aug_prob', type=float, default=0.1)  # 数据增强的概率，默认为0.1             ********
 parser.add_argument('--max_len', type=int, default=170)  # 序列最大长度，默认为170
 parser.add_argument('--early_stop', type=int, default=5)  # 提前停止的步数，默认为5                 ********
@@ -20,6 +20,7 @@ parser.add_argument('--emb_type', default='bert')  # 嵌入类型，默认为'be
 parser.add_argument('--save_log_dir', default='./logs')  # 日志保存目录，默认为'./logs'
 parser.add_argument('--save_param_dir', default='./param_model')  # 参数保存目录，默认为'./param_model'
 parser.add_argument('--param_log_dir', default='./logs/param')  # 参数日志保存目录，默认为'./logs/param'
+parser.add_argument('--model_path', default='bert-base-uncased')  # 使用预处理模型路径,默认使用bert-base-uncased预处理
 
 # 解析命令行参数
 args = parser.parse_args()
@@ -52,9 +53,10 @@ config = {
     'early_stop': args.early_stop,  # 提前停止步数
     'root_path': args.root_path,  # 数据根目录
     'aug_prob': args.aug_prob,  # 数据增强概率
-    'weight_decay': 5e-5,  # 权重衰减
+    'weight_decay': 5e-4,  # 权重衰减
     'model': {
-        'mlp': {'dims': [384], 'dropout': 0.2}  # MLP模型参数
+        'mlp': {'dims': [384], 'dropout': 0.5},# MLP模型参数
+        'model_path': args.model_path
     },
     'emb_dim': args.emb_dim,  # 嵌入维度
     'lr': args.lr,  # 学习率

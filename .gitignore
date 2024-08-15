@@ -1,2 +1,9 @@
 /ENDEF_en/Bert/
 /reexperiment/bert-base-uncased/
+/reexperiment/bert-base-multilingual-cased/
+/reexperiment/bert_base_chinese/
+/reexperiment/bert-base-chinese/
+/reexperiment/data/gossipcop/
+/reexperiment/data/twitter/
+/reexperiment/data/weibo/
+/reexperiment/data/weibo/rumor_images/

@@ -35,45 +35,47 @@
 
 下面以reexperiment结构为例介绍代码结构，ENDEF_en结构类似。
 ```python
-├── ENDEF-glj<br>
-│   └── readme.md<br>
-│   ENDEF_en       (复现原文数据集)<br>
-└── reexperiment(新数据集实验及消融实验)<br>
-    ├── main.py<br>
-    ├── grid_search.py<br>
-    ├── test.py<br>
-    ├── data       (原文数据集消融版)<br>
-    │   ├── train.json<br>
-    │   ├── val.json<br>
-    │   ├── test.json<br>
-    ├── datanew    (新数据集)<br>
-    │   ├── train.json<br>
-    │   ├── val.json<br>
-    │   ├── test.json<br>
-    ├── logs       (日志信息)<br>
-    ├── models(训练)<br>
-    │   ├── bigru.py<br>
-    │   ├── bigruendef.py<br>
-    │   └── ...<br>
-    ├── param_model           (训练结果)<br>
-    │	│   ├── origin... .json   (消融)<br>
-    │   │   ├── ... .json         (新数据集)<br>
-    │	│   └── ...<br>
-    └── utils     (数据加载/实体提取/评价指标等等)<br>                
-        ├── dataloader.py<br>
-        ├── texsmart.py<br>
-        ├── draw.py<br>
-        └── utils.py<br>
+reeexperiment/
+├── bert-base-chinese/
+├── bert-base-multilingual-cased/
+├── bert-base-uncased/
+├── data/
+│   ├── gossipcop/
+│   ├── twitter/
+│   └── weibo/
+├── datanew/
+├── logs/
+├── models/
+├── param_model/
+├── utils/
+│   ├── dataloader.py
+│   ├── draw.py
+│   ├── texsmart.py
+│   ├── texsmart_gossipcop.py
+│   ├── texsmart_twitter.py
+│   ├── texsmart_weibo.py
+│   ├── utils.py
+├── grid_search.py
+├── main.py
+├── test_gossipcop.py
+├── test_twitter.py
+└── test_weibo.py
+
 ```
+- 使用test_{dataset}.py进行数据集划分（注意脚本内部文件路径选取），使用texsmart__{dataset}.py进行文本处理（注意脚本内部文件路径选取）
+
 # Run
+
 因为此框架与方法无关，因此这里使用论文中相同的五种基础模型进行实验，即BiGRU、EANN、BERT、MDFEND和BERT-Emo，_endef后缀表示该方法与ENDEF框架结合。
 ```python  
 # --model_name可选：bigru, bigru_endef, bert, bert_endef, bertemo, bertemo_endef, eann, eann_endef, mdfend, mdfend_endef
-python exmain.py --gpu 0 --lr 0.0001 --model_name bigru 
+python exmain.py --gpu 0 --lr 0.0001 --model_name bigru --model_path bert-base-uncased
 ```
 # Results
 
-| acc    | acc_real | acc_fake |
-| ------ | -------- | -------- |
-| 0.6890 | 0.7480   | 0.6300   |
+| data_set  | acc    | acc_real | acc_fake |
+| --------- | ------ | -------- | -------- |
+| gossipcop | 0.6890 | 0.7480   | 0.6300   |
+| twitter   | 0.5838 | 0.5432   | 0.6166   |
+| weibo     | 0.6409 | 0.6430   | 0.6386   |
 

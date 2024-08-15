@@ -10,7 +10,7 @@ def split_json_by_truth(json_data):
     fake_data = {}
 
     for key,value in json_data.items():
-        if value['label']:
+        if value['label'] == 'real':
             real_data[key] = value
         else:
             fake_data[key] = value
@@ -71,7 +71,7 @@ def opennpy():
     print(data)
 
 if __name__ == '__main__':
-    with open('./data/raw/gossipcop_v3_keep_data_in_proper_length.json', 'r', encoding='utf-8') as f:
+    with open('data/gossipcop/raw/gossipcop_v3_keep_data_in_proper_length.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     real_data, fake_data = split_json_by_truth(data)
 
@@ -80,10 +80,10 @@ if __name__ == '__main__':
     train_real.update(train_fake)
     valid_real.update(valid_fake)
     test_real.update(test_fake)
-    with open('./data/raw/train_raw.json', 'w', encoding='utf-8') as f:
+    with open('data/gossipcop/raw/train_raw.json', 'w', encoding='utf-8') as f:
         json.dump(train_real, f, ensure_ascii=False, indent=4)
 
-    with open('./data/raw/valid_raw.json', 'w', encoding='utf-8') as f:
+    with open('data/gossipcop/raw/valid_raw.json', 'w', encoding='utf-8') as f:
         json.dump(valid_real, f, ensure_ascii=False, indent=4)
-    with open('./data/raw/test_raw.json', 'w', encoding='utf-8') as f:
+    with open('data/gossipcop/raw/test_raw.json', 'w', encoding='utf-8') as f:
         json.dump(test_real, f, ensure_ascii=False, indent=4)

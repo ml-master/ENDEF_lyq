@@ -38,9 +38,9 @@ label_dict = {
 # }
 
 # 将文本转换为模型输入的函数
-def word2input(texts, max_len):
+def word2input(texts, max_len, model_path):
     # 加载BERT tokenizer
-    tokenizer_path = 'bert-base-uncased'  # 实际的BERT模型文件路径
+    tokenizer_path = model_path  # 实际的BERT模型文件路径
     tokenizer = BertTokenizer.from_pretrained(tokenizer_path)
     token_ids = []
     for i, text in enumerate(texts):
@@ -93,7 +93,7 @@ def get_entity(entity_list):
 
 
 # 加载数据并构建数据加载器
-def get_dataloader(path, max_len, batch_size, shuffle, use_endef, aug_prob):
+def get_dataloader(path, max_len, batch_size, shuffle, use_endef, aug_prob,model_path):
     data_list = json.load(open(path, 'r', encoding='utf-8'))  # 加载JSON数据文件
     df_data = pd.DataFrame(columns=('content', 'label'))  # 创建空的DataFrame用于存储数据
     for item in data_list:
@@ -113,8 +113,8 @@ def get_dataloader(path, max_len, batch_size, shuffle, use_endef, aug_prob):
     label = torch.tensor(df_data['label'].astype(int).to_numpy())
 
     # 调用word2input函数将文本转换为模型输入
-    content_token_ids, content_masks = word2input(content, max_len)
-    entity_token_ids, entity_masks = word2input(entity_content, 50)
+    content_token_ids, content_masks = word2input(content, max_len, model_path)
+    entity_token_ids, entity_masks = word2input(entity_content, 50, model_path)
 
     # 构建TensorDataset和DataLoader
     dataset = TensorDataset(content_token_ids,

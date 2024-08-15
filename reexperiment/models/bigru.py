@@ -13,14 +13,13 @@ from transformers import BertModel, BertConfig
 from utils.utils import Recorder,data2gpu, Averager, metrics
 
 class BiGRUModel(torch.nn.Module):
-    def __init__(self, emb_dim, mlp_dims, dropout, num_layers):
+    def __init__(self, emb_dim, mlp_dims, dropout, num_layers ,local_model_path):
         super(BiGRUModel, self).__init__()
         self.fea_size = emb_dim
 
 
         # self.bert = BertModel.from_pretrained('bert-base-uncased').requires_grad_(False)
 
-        local_model_path = 'bert-base-uncased'  # 这里填写您解压模型文件的实际路径
         config = BertConfig.from_pretrained(local_model_path)
         self.bert = BertModel.from_pretrained(local_model_path, config=config).requires_grad_(False)
 
@@ -62,17 +61,17 @@ class Trainer():
     def train(self, logger = None):
         if(logger):
             logger.info('start training......')
-        self.model = BiGRUModel(self.config['emb_dim'], self.config['model']['mlp']['dims'], self.config['model']['mlp']['dropout'], num_layers=1)
+        self.model = BiGRUModel(self.config['emb_dim'], self.config['model']['mlp']['dims'], self.config['model']['mlp']['dropout'], 1 ,self.config['model']['model_path'])
         if self.config['use_cuda']:
             self.model = self.model.cuda()
         loss_fn = torch.nn.BCELoss()
         optimizer = torch.optim.Adam(params=self.model.parameters(), lr=self.config['lr'], weight_decay=self.config['weight_decay'])
         recorder = Recorder(self.config['early_stop'])
-        val_loader = get_dataloader(self.config['root_path'] + 'val.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'])
+        val_loader = get_dataloader(self.config['root_path'] + 'valid.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'], model_path = self.config['model']['model_path'])
 
         for epoch in range(self.config['epoch']):
             self.model.train()
-            train_loader = get_dataloader(self.config['root_path'] + 'train.json', self.config['max_len'], self.config['batchsize'], shuffle=True, use_endef=False, aug_prob=self.config['aug_prob'])
+            train_loader = get_dataloader(self.config['root_path'] + 'train.json', self.config['max_len'], self.config['batchsize'], shuffle=True, use_endef=False, aug_prob=self.config['aug_prob'],model_path = self.config['model']['model_path'])
             train_data_iter = tqdm.tqdm(train_loader)
             avg_loss = Averager()
 
@@ -119,7 +118,7 @@ class Trainer():
                 continue
         self.model.load_state_dict(torch.load(os.path.join(self.save_path, 'parameter_bigru.pkl')))
 
-        test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'])
+        test_future_loader = get_dataloader(self.config['root_path'] + 'test.json', self.config['max_len'], self.config['batchsize'], shuffle=False, use_endef=False, aug_prob=self.config['aug_prob'],model_path = self.config['model']['model_path'])
         future_results, acc ,acc_real, acc_fake = self.test(test_future_loader)
         print(future_results)
         if(logger):
