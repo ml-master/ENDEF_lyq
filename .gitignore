@@ -3,7 +3,12 @@
 /reexperiment/bert-base-multilingual-cased/
 /reexperiment/bert_base_chinese/
 /reexperiment/bert-base-chinese/
-/reexperiment/data/gossipcop/
-/reexperiment/data/twitter/
-/reexperiment/data/weibo/
+/reexperiment/data/gossipcop/pre
+/reexperiment/data/gossipcop/raw
+/reexperiment/data/twitter/devset
+/reexperiment/data/twitter/images
+/reexperiment/data/twitter/testset
+
 /reexperiment/data/weibo/rumor_images/
+/reexperiment/data/weibo/nonrumor_images/
+/reexperiment/data/weibo/tweets/
