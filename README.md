@@ -12,13 +12,14 @@
 本工作旨在利用该论文所提出的方法，结合课程提供的**新的新闻数据集**，验证该方法的性能，评估其在假新闻检测领域的性能表现。
 
 # Dataset
-#### 这里使用到了两份数据集： 
+#### 这里可以使用三种数据集： 
 
-数据集1是原论文中的英文数据集，来源于FakeNewsNet的GossipCop数据：https://github.com/KaiDMML/FakeNewsNet 
+- Weibo & Twitter:    [dataset in MRML](https://github.com/plw-study/MRML)
 
-数据集2是课程提供的基于风格的新闻数据集：https://github.com/junyachen/Data-examples/blob/main/README.md#style-based-fake
+- Gossipcop:    [Gossipcop-LLM](https://github.com/junyachen/Data-examples?tab=readme-ov-file)
+
 #### 数据集处理：
-数据集1（ENDEF_en/data）中原作者已经将数据进行划分和实体提取，但并未给出处理具体代码。 因此我对数据集2首先进行划分，然后使用texsmart工具提取其中的实体信息，详见代码（reexperiment/test.py和reexperiment/utils/texsmart.py）。处理后的数据集在（reexperiment/datanew）。
+数据集1（ENDEF_en/data）中原作者已经将数据进行划分和实体提取，但并未给出处理具体代码。 因此我对数据集2首先进行划分，然后使用texsmart工具提取其中的实体信息，详见代码（reexperiment/test_{dataset}.py和reexperiment/utils/texsmart__{data_set}.py）。处理后的数据集在放在每个数据集文件夹下的processed文件夹下（建议自行选择输出路径）
 
 # Code
 ### Requirements
