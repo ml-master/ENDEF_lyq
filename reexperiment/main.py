@@ -53,7 +53,7 @@ config = {
     'early_stop': args.early_stop,  # 提前停止步数
     'root_path': args.root_path,  # 数据根目录
     'aug_prob': args.aug_prob,  # 数据增强概率
-    'weight_decay': 1e-3,  # 权重衰减
+    'weight_decay': 5e-4,  # 权重衰减
     'model': {
         'mlp': {'dims': [384], 'dropout': 0.5},# MLP模型参数
         'model_path': args.model_path
