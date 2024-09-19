@@ -79,4 +79,5 @@ python exmain.py --gpu 0 --lr 0.0001 --model_name bigru --model_path bert-base-u
 | gossipcop | 0.6890 | 0.7480   | 0.6300   |
 | twitter   | 0.5838 | 0.5432   | 0.6166   |
 | weibo     | 0.6409 | 0.6430   | 0.6386   |
+| 新twitter | 0.5421 | 0.4572   | 0.6109   |
 
